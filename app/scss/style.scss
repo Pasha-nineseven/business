@@ -1,20 +1,33 @@
 
+@font-face {
+    font-family: 'pf_din_text_cond_promedium';
+    src: url('../fonts/pfdintextcondpro/pfdintextcondpro-medium/pfdintextcondpro-medium.eot');
+    src: url('../fonts/pfdintextcondpro/pfdintextcondpro-medium/pfdintextcondpro-medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pfdintextcondpro/pfdintextcondpro-medium/pfdintextcondpro-medium.woff2') format('woff2'),
+         url('../fonts/pfdintextcondpro/pfdintextcondpro-medium/pfdintextcondpro-medium.woff') format('woff'),
+         url('../fonts/pfdintextcondpro/pfdintextcondpro-medium/pfdintextcondpro-medium.ttf') format('truetype'),
+         url('../fonts/pfdintextcondpro/pfdintextcondpro-medium/pfdintextcondpro-medium.svg#pf_din_text_cond_promedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
-// Core variables and mixins
-@import "bootstrap/variables";
+@font-face {
+  font-family: 'trebuchetms';
+  src: url('../fonts/trebuchet-ms/trebuchet-ms-regular/trebuchetms.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/trebuchet-ms/trebuchet-ms-regular/trebuchetms.woff') format('woff'),
+  url('../fonts/trebuchet-ms/trebuchet-ms-regular/trebuchetms.ttf')  format('truetype'),
+  url('../fonts/trebuchet-ms/trebuchet-ms-regular/trebuchetms.svg#TrebuchetMS') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@import "components/reboot";
 
 @import "components/vars";
 
- @import "bootstrap/mixins";
- @import "bootstrap/normalize";
- @import "bootstrap/grid";
- // @import "bootstrap/responsive-utilities";
- //@import "bootstrap/utilities";
-
-
 @import "components/body";
-
-
 
 // a[href^="http://maps.google.com/maps"]{display:none !important}
 // a[href^="https://maps.google.com/maps"]{display:none !important}
@@ -43,10 +56,11 @@
 	height: 100%;
 }
 .container-fluid{
-	max-width: 1280px;
+	max-width: 1380px;
 	padding: 0;
 	position: relative;
 	width: 100%;
+	margin: 0 auto;
 }
 
 

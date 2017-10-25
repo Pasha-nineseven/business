@@ -1,4 +1,12 @@
 .page-header{
-
+	overflow: hidden;
 }
 
+.top-logo{
+	display: inline-block;
+	vertical-align: middle;
+	width: 234px;
+	height: 66px;
+	float: left;
+	background: url(../img/content/top-logo.png) no-repeat;
+}

@@ -24,6 +24,7 @@ var divStr = 	'<div style="position: fixed; z-index: 1005; bottom: 0; right: 0; 
 			  		<ol id="pages"> \
 				  		<li><a href="index.html">Index</a></li> \
         				<li><a href="enter.html">Enter</a></li> \
+        				<li><a href="document.html">Документ</a></li> \
 					</ol> \
 				</div>';
 document.getElementsByTagName('body')[0].innerHTML += divStr;

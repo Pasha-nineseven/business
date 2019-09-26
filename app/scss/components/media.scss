@@ -1,0 +1,199 @@
+@media screen and (max-width: 1200px) {
+  .half-inner {
+    padding-right: 0;
+    width: 100%;
+    float: none;
+    margin-bottom: 24px; }
+  .half-inner:last-child {
+    padding-right: 0;
+    padding-left: 0; }
+  .content-item--half {
+    margin-right: 0;
+    margin-bottom: 0; }
+  .contacts-item {
+    padding-right: 30px; }
+    .contacts-item:last-child {
+      padding-right: 0; } }
+
+@media screen and (max-width: 1100px) {
+  .top-nav__item {
+    margin-right: 8px; }
+    .top-nav__item:last-child {
+      margin-right: 0; }
+  body {
+    font-size: 13px; }
+  .courses__icon {
+    line-height: 13px; }
+  .copyright {
+    width: 50%;
+    padding-right: 100px; }
+  .page-footer__contacts {
+    width: 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .contacts-item--mail {
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3;
+    padding-top: 20px; } }
+
+@media screen and (max-width: 1023px) {
+  body {
+    font-size: 15px; }
+  .page-content .container {
+    margin-right: -24px;
+    padding-left: 0; }
+  .top-nav__item--desktop {
+    display: none; }
+  .col-left {
+    width: 50%;
+    padding-right: 24px; }
+  .col-right {
+    width: 50%;
+    float: left;
+    padding-right: 24px; }
+  .col-center {
+    padding: 0;
+    width: 100%;
+    float: none;
+    clear: both;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .col-center .content-item {
+      width: -webkit-calc(50% - 24px);
+      width: calc(50% - 24px);
+      float: none;
+      margin-right: 24px;
+      -webkit-box-ordinal-group: 2;
+      -webkit-order: 1;
+          -ms-flex-order: 1;
+              order: 1; }
+    .col-center .content-item--half {
+      -webkit-box-ordinal-group: 1;
+      -webkit-order: 0;
+          -ms-flex-order: 0;
+              order: 0;
+      width: 100%;
+      margin-right: 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+    .col-center .half-inner {
+      width: 50%;
+      padding-right: 24px; }
+      .col-center .half-inner .content-item--banner {
+        width: 100%; }
+  .menu-btn {
+    display: block; }
+  .courses__icon {
+    line-height: 18px; }
+  .top-search{
+    display: none;
+  }
+  }
+
+@media screen and (max-width: 900px) {
+  .copyright {
+    width: 40%;
+    padding-right: 20px; }
+  .page-footer__contacts {
+    width: 60%; } }
+
+@media screen and (max-width: 767px) {
+  .page-footer__wrap {
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .copyright {
+    width: 100%;
+    padding-right: 0;
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2; }
+  .page-footer__contacts {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 20px; }
+  .contacts-item {
+    width: 60%; }
+  .contacts-item--mail {
+    width: 100%;
+    padding-right: 0; }
+  .contacts-item--address {
+    width: 40%;
+    padding-left: 10px; }
+  .col-left,
+  .col-right,
+  .col-center .content-item,
+  .col-center .half-inner {
+    width: 100%;
+    float: none;
+    padding-right: 0; }
+  .col-center {
+    padding-right: 0; }
+  .page-content .container {
+    margin-right: 0;
+    padding-left: 24px; }
+  .col-center .content-item {
+    margin-right: 0; }
+
+  .enter__in {
+    max-width: 100%;
+    position: static;
+    transform: none;
+  }
+  .enter{
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .top-logo {
+    float: none;
+    width: 170px;
+    height: 50px;
+    margin: 4px auto 0;
+    display: block; }
+  .menu-btn {
+    margin-right: 0; }
+  .menu-mobile {
+    top: 60px;
+    height: -webkit-calc(100% - 60px);
+    height: calc(100% - 60px); }
+  .page-search__submit {
+    display: none; }
+    .enter__form {
+    padding: 0 20px 24px;
+    max-width: 100%;}
+  .page-search__toggle {
+    right: 0;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px; } }

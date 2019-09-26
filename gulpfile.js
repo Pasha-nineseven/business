@@ -23,26 +23,26 @@ gulp.task('sass', function(){
 });
 
 //SCRIPTS concat+uglify
-gulp.task('scripts', function(){
-    return gulp.src([
-        'app/libs/jquery/dist/jquery.min.js',
-        'app/libs/modernizr/modernizr.min.js',
-        'app/libs/flexibility/flexibility.js',
-        'app/libs/magnific/jquery.magnific-popup.js',
-        'app/libs/slick/slick.min.js',
-    ])
-    .pipe(concat('libs.min.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest('app/js'))
-});
+// gulp.task('scripts', function(){
+//     return gulp.src([
+//         'app/libs/jquery/dist/jquery.min.js',
+//         'app/libs/modernizr/modernizr.min.js',
+//         'app/libs/flexibility/flexibility.js',
+//         'app/libs/magnific/jquery.magnific-popup.js',
+//         'app/libs/slick/slick.min.js',
+//     ])
+//     .pipe(concat('libs.min.js'))
+//     .pipe(uglify())
+//     .pipe(gulp.dest('app/js'))
+// });
 
-gulp.task('css-libs', ['sass'], function() {
-    return gulp.src('app/css/libs.css')
-        .pipe(cssnano())
-        .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('app/css'))
-        .pipe(gulp.dest('dist/css'))
-});
+// gulp.task('css-libs', ['sass'], function() {
+//     return gulp.src('app/css/libs.css')
+//         .pipe(cssnano())
+//         .pipe(rename({suffix: '.min'}))
+//         .pipe(gulp.dest('app/css'))
+//         .pipe(gulp.dest('dist/css'))
+// });
 
 gulp.task('browser-sync', function() {
     browserSync({
@@ -65,8 +65,8 @@ gulp.task('browser-sync', function() {
 // });
 
 
-gulp.task('watch', ['browser-sync','css-libs', 'scripts',], function() {
-    gulp.watch('app/scss/*.scss', ['sass']); // Наблюдение за sass файлами
+gulp.task('watch', ['browser-sync'], function() {
+    gulp.watch(['app/scss/*.scss' , 'app/scss/components/*.scss'], ['sass']); // Наблюдение за sass файлами
     // Наблюдение за другими типами файлов
     gulp.watch('app/*.html', browserSync.reload);
     gulp.watch('app/js/**/*.js', browserSync.reload);
@@ -92,11 +92,10 @@ gulp.task('img', function(){
 });
 
 //BUILD version
-gulp.task('build', ['clean', 'img', 'sass', 'css-libs', 'scripts'], function() {
+gulp.task('build', ['clean', 'img', 'sass',], function() {
 
     var buildCss = gulp.src([
         'app/css/style.css',
-        'app/css/libs.min.css'
         ])
     .pipe(gulp.dest('dist/css'))
 
@@ -118,4 +117,4 @@ gulp.task('clear', function() {
 
 
 //DEFAULT
-gulp.task('default', ['watch','browser-sync','css-libs', 'scripts',]);
+gulp.task('default', ['watch','browser-sync']);

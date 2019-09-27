@@ -32,7 +32,7 @@
 							<span class="burger-icon"></span>
 						</a>
 						<div class="top-nav">
-							<a href="#" class="top-nav__item">Купить</a>
+							<a href="#" class="top-nav__item top-nav__item--desktop">Купить</a>
 							<a href="#" class="top-nav__item">Выйти</a>
 						</div>
 						<a href="#" class="top-logo">
@@ -61,13 +61,51 @@
 					<div class="container">
 						<div class="page-aside">
 							<div class="content-item">
-								<div class="item">
+								<!-- MOBILE-LINK -->
+								<a href="#" class="content-item__toggle filters-toggle-link js-filters-toggle-link">Фильтры</a>
+								<!-- END MOBILE-LINK -->
+								<div class="item item--filters">
 									<div class="document-form">
-										<div class="document-form__links"></div>
-										d
+										<form action="tx.dll#f" method="get">
+											<div class="document-form-links">
+												<div class="document-form-links__item">
+													<a href="#" class="document__card"></a>
+												</div>
+												<div class="document-form-links__item">
+													<a href="#" class="document__hide"></a>
+												</div>
+												<div class="document-form-links__item">
+													<a href="#" class="document__bookmark"></a>
+												</div>
+												<div class="document-form-links__item">
+													<a href="#" class="document__control"></a>
+												</div>
+												<div class="document-form-links__item">
+													<a href="#" class="document__print"></a>
+												</div>
+											</div>
+											<div class="enter__item">
+												<div class="enter__label">В редакции от</div>
+												<div class="select-wrap">
+													<select name="v">
+														<option value="item1">item1</option>
+														<option value="item2">item2</option>
+														<option value="item3">item3</option>
+													</select>
+													<input type="submit" value="Ok">
+												</div>
+											</div>
+											<div class="enter__item">
+												<div class="enter__label">Найти в тексте</div>
+												<input type="text" name="а" placeholder="Введите текст">
+											</div>
+											<div class="document-form__submit">
+												<input type="submit" value="Найти">
+											</div>
+										</form>
 									</div>
 									<div class="document-comments">
-										<a href="#" class="document-comments__item document-comments__item--or">Комментарии</a>
+										<a href="#" class="document-comments__item">Комментарии</a>
 										<a href="#" class="document-comments__item">
 											Информация о вступлении документа в силу для Республики Беларусь будет размещена в тексте после предоставления ее НЦПИ
 										</a>
@@ -81,7 +119,10 @@
 								<div class="item item--top">
 									Содержание
 								</div>
-								<div class="item">
+								<!-- MOBILE-LINK -->
+								<a href="#" class="content-item__toggle contents-toggle-link js-contents-toggle-link">Содержание</a>
+								<!-- END MOBILE-LINK -->
+								<div class="item item--contents">
 									<a href="#" class="contents-link">
 										Важные документы недели (с 16 по 20 сентября 2019 г.)
 									</a>

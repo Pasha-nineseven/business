@@ -1,3 +1,4 @@
+//MENU-MOBILE TOGGLE
 function classList() {
 	var menuBtn = document.querySelector('.menu-btn');
 	var	menu    = document.querySelector('.menu-mobile');
@@ -12,6 +13,29 @@ function classList() {
 	});
 }
 document.addEventListener("DOMContentLoaded", classList);
+
+
+//FILTER TOGGLE
+function filterToggle() {
+	var filterBtn = document.querySelector('.js-filters-toggle-link');
+	filterBtn.addEventListener( "click", function() {
+    	this.classList.toggle('active');
+    	this.parentNode.classList.toggle('active');
+	});
+}
+document.addEventListener("DOMContentLoaded", filterToggle);
+
+//CONTENTS TOGGLE
+function contentsToggle() {
+	var contentsBtn = document.querySelector('.js-contents-toggle-link');
+	contentsBtn.addEventListener( "click", function() {
+    	this.classList.toggle('active');
+    	this.parentNode.classList.toggle('active');
+	});
+}
+document.addEventListener("DOMContentLoaded", contentsToggle);
+
+
 
 
 var divStr = 	'<div style="position: fixed; z-index: 1005; bottom: 0; right: 0; background: #fff; border: solid 1px #828286; width: 160px;"> \

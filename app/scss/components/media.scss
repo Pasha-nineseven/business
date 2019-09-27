@@ -109,6 +109,8 @@
   .top-search{
     display: none;
   }
+  .page-gen {
+    padding: 0 24px;}
   }
 
 @media screen and (max-width: 900px) {
@@ -170,12 +172,80 @@
     position: static;
     transform: none;
   }
-  .enter{
+  .enter {
+      padding: 0 15px;
+  }
+  .page-aside {
+    width: 100%;
+    float: none;
+  }
+  .page-gen {
     padding: 0;
+  }
+  .content-item__toggle{
+    display: block;
+    float: left;
+  }
+  .item--top{
+    display: none;
+  }
+  
+  .item--filters{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    //display: block;
+    display: none;
+    background: #fff;
+    z-index: 3;
+    width: 311px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid #E5E5E5;
+  }
+  .item--contents{
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    //display: block;
+    display: none;
+    background: #fff;
+    z-index: 3;
+    width: 311px;
+    border-radius: 4px;
+    transform: translateX(-50%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid #E5E5E5;
+  }
+  .page-aside{
+    background: #F7F7F7;
+    margin-bottom: 24px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    &:after{
+      content: "";
+      display: table;
+      clear: both;
+    }
+    .content-item{
+      position: relative;
+      box-shadow:none;
+      border-radius: 0;
+      margin-bottom: 0;
+      float: left;
+      width: auto;
+      overflow: visible;
+    }
   }
 }
 
 @media screen and (max-width: 600px) {
+  .container{
+    padding: 0 15px;
+  }
+  .page-content .container{
+    padding-left: 15px;
+  }
   .top-logo {
     float: none;
     width: 170px;
@@ -196,4 +266,51 @@
   .page-search__toggle {
     right: 0;
     border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px; } }
+    border-bottom-right-radius: 2px; }
+  .page-aside .content-item {
+    width: 50%;
+  }
+  .contents-toggle-link,
+  .filters-toggle-link{
+    float: none;
+    background: #F7F7F7;
+    padding: 3px;
+    text-align: center;
+    border:1px solid #E5E5E5;
+    &.active{
+      background: #fff;
+    }
+  }
+  .contents-toggle-link{
+    border-left: 1px solid transparent!important;
+  }
+  .item--contents,
+  .item--filters{
+    border-top: 0;
+  }
+  .page-aside{
+    margin-bottom: 0;
+    box-shadow:none;
+  }
+  .document{
+    padding: 15px;
+  }
+  .document__item{
+    padding-left: 0;
+  }
+  .document__links {
+    position: static;
+    margin-bottom: 10px;
+  }
+  .item--contents {
+    left: auto;
+    right: 0;
+    width: 200%;
+    transform: none;
+  }
+  .item--filters {
+    left: 0;
+    width: 200%;
+    transform: none;
+  }
+}

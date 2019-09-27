@@ -1129,4 +1129,22 @@ textarea, input {
     }
 }
 
+.search{
+    .page-search__form{
+        margin-bottom: 24px;
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            background: #fff;
+            border-bottom: 0;
+            padding: 0 180px 0 50px;
+        }
+    }
+    input[type="submit"]{
+        font-size: 22px;
+        padding: 0 16px;
+        box-shadow:none;
+    }
+}
+
 @import "components/media";

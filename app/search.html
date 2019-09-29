@@ -58,35 +58,194 @@
 			<div class="wrapper">
 				<div class="page-content workarea">
 					<!-- CONTENT-PART -->
-					<div class="container">
-						<div class="page-aside page-aside--lg">
-							<div class="content-item">
-								<div class="item">
-									asd
+					<form action="#" method="post">
+						<div class="container">
+							<div class="page-aside">
+								<div class="search-form">
+									<div class="item">
+										<div class="enter__item">
+											<div class="enter__label">Номер принятия</div>
+											<input type="text" placeholder="Не выбран" name="enac_num" maxlength="32">
+										</div>
+										<div class="enter__item">
+											<div class="enter__label">Статус документа</div>
+											<select name="stat">
+												<option value="item1">item1</option>
+												<option value="item2">item2</option>
+												<option value="item3">item3</option>
+											</select>
+										</div>
+										<div class="enter__item">
+											<div class="enter__label">Банк данных</div>
+											<select name="bd">
+												<option value="item1">item1</option>
+												<option value="item2">item2</option>
+												<option value="item3">item3</option>
+											</select>
+										</div>
+										<div class="enter__item">
+											<div class="enter__label">Дата принятия</div>
+											<input type="text" placeholder="__.__.____" name="enac_dat" maxlength="10">
+										</div>
+										<div class="enter__item enter__item--date">
+											<div class="enter__add">С</div>
+											<input type="text" placeholder="__.__.____" name="enac_dat_from" maxlength="10">
+										</div>
+										<div class="enter__item enter__item--date">
+											<div class="enter__add">По</div>
+											<input type="text" placeholder="__.__.____" name="enac_dat_to" maxlength="10">
+										</div>
+										<div class="search-form-check">
+											<div class="search-form-check__item">
+												<div class="search-form-title">Законодательство</div>
+												<div class="check-wrap">
+													<input type="checkbox" id="checkbox1" name="block0">
+													<label for="checkbox1">Нормативные документы (<span>115956</span>)</label>
+												</div>
+												<div class="check-wrap">
+													<input type="checkbox" id="checkbox2" name="block0">
+													<label for="checkbox2">Решения орг. местного упр. (<span>96246</span>)</label>
+												</div>
+												<div class="check-wrap">
+													<input type="checkbox" id="checkbox3" name="block0">
+													<label for="checkbox3">Международные договора (<span>115956</span>)</label>
+												</div>
+												<div class="check-wrap">
+													<input type="checkbox" id="checkbox4" name="block0">
+													<label for="checkbox4">Ненормативные документы (<span>96246</span>)</label>
+												</div>
+												<div class="check-wrap">
+													<input type="checkbox" id="checkbox5" name="block0">
+													<label for="checkbox5">Судебная практика (<span>37373</span>)</label>
+												</div>
+											</div>
+											<div class="search-form-check__item">
+												<div class="search-form-title">Аналитические материалы</div>
+												<div class="check-wrap">
+													<input type="checkbox" id="checkbox6" name="block10">
+													<label for="checkbox6">Алгоритмы и расчеты (<span>115956</span>)</label>
+												</div>
+												<div class="check-wrap">
+													<input type="checkbox" id="checkbox7" name="block10">
+													<label for="checkbox7">Вопросы и ответы (<span>96246</span>)</label>
+												</div>
+												<div class="check-wrap">
+													<input type="checkbox" id="checkbox8" name="block10">
+													<label for="checkbox8">Комментарии и пособия (<span>115956</span>)</label>
+												</div>
+												<div class="check-wrap">
+													<input type="checkbox" id="checkbox9" name="block10">
+													<label for="checkbox9">Корреспонденция счетов (<span>96246</span>)</label>
+												</div>
+												<div class="check-wrap">
+													<input type="checkbox" id="checkbox10" name="block10">
+													<label for="checkbox10">Справочная информация (<span>37373</span>)</label>
+												</div>
+												<div class="check-wrap">
+													<input type="checkbox" id="checkbox11" name="block10">
+													<label for="checkbox11">Формы документов (<span>37373</span>)</label>
+												</div>
+												<div class="search-form-hint">Выберите критерии поиска и нажмите “Найти”</div>
+											</div>
+										</div>
+										<div class="t-right">
+											<a href="#" class="search-form-reset">Очистить</a>
+										</div>
+									</div>
 								</div>
 							</div>
-						</div>
-
-						<div class="page-gen">
-							<div class="search">
-								<div class="page-search">
-									<form action="#" method="post">
+							<div class="page-gen">
+								<div class="search">
+									<div class="page-search">
 										<div class="page-search__form">
 											<div class="page-search__icon"></div>
 											<a href="#" class="page-search__toggle"></a>
 											<input type="text" id="q" name="q" class="page-search__input inp_noborder" maxlength="130" autocomplete="off">
 											<input type="submit" class="page-search__submit" value="Найти">
 										</div>
-									</form>
-								</div>
-								<div class="item search-list">
-									sds
+									</div>
+									<div class="search-list">
+										<div class="item item--title">
+											<div class="item__title">По Вашему запросу найдено <span>373737</span> документов</div>
+										</div>
+										<div class="item">
+											<ol class="search-list-result">
+												<li class="search-list-result__item">
+													<a href="#" class="search-list-result__link">
+														Конституция Республики Беларусь от 15.03.1994 №2875-XII (ред. от 17.11.2004)
+														<div class="search-list-result__add">Кодекс Республики Беларусь</div>
+													</a>
+												</li>
+												<li class="search-list-result__item">
+													<a href="#" class="search-list-result__link">
+														Конституция Республики Беларусь от 15.03.1994 №2875-XII (ред. от 17.11.2004)
+														<div class="search-list-result__add">Кодекс Республики Беларусь</div>
+													</a>
+												</li>
+												<li class="search-list-result__item">
+													<a href="#" class="search-list-result__link">
+														Конституция Республики Беларусь от 15.03.1994 №2875-XII (ред. от 17.11.2004)
+														<div class="search-list-result__add">Кодекс Республики Беларусь</div>
+													</a>
+												</li>
+												<li class="search-list-result__item">
+													<a href="#" class="search-list-result__link">
+														Конституция Республики Беларусь от 15.03.1994 №2875-XII (ред. от 17.11.2004)
+														<div class="search-list-result__add">Кодекс Республики Беларусь</div>
+													</a>
+												</li>
+												<li class="search-list-result__item">
+													<a href="#" class="search-list-result__link">
+														Конституция Республики Беларусь от 15.03.1994 №2875-XII (ред. от 17.11.2004)
+														<div class="search-list-result__add">Кодекс Республики Беларусь</div>
+													</a>
+												</li>
+												<li class="search-list-result__item">
+													<a href="#" class="search-list-result__link">
+														Конституция Республики Беларусь от 15.03.1994 №2875-XII (ред. от 17.11.2004)
+														<div class="search-list-result__add">Кодекс Республики Беларусь</div>
+													</a>
+												</li>
+												<li class="search-list-result__item">
+													<a href="#" class="search-list-result__link">
+														Конституция Республики Беларусь от 15.03.1994 №2875-XII (ред. от 17.11.2004)
+														<div class="search-list-result__add">Кодекс Республики Беларусь</div>
+													</a>
+												</li>
+												<li class="search-list-result__item">
+													<a href="#" class="search-list-result__link">
+														Конституция Республики Беларусь от 15.03.1994 №2875-XII (ред. от 17.11.2004)
+														<div class="search-list-result__add">Кодекс Республики Беларусь</div>
+													</a>
+												</li>
+											</ol>
+											<div class="paging">
+												<a href="#" class="paging__item paging__item--prev"></a>
+												<span class="paging__item active">1</span>
+												<a href="#" class="paging__item">2</a>
+												<a href="#" class="paging__item">3</a>
+												<a href="#" class="paging__item">4</a>
+												<a href="#" class="paging__item">5</a>
+												<a href="#" class="paging__item">6</a>
+												<a href="#" class="paging__item">7</a>
+												<a href="#" class="paging__item">8</a>
+												<a href="#" class="paging__item">9</a>
+												<a href="#" class="paging__item">10</a>
+												<a href="#" class="paging__item">11</a>
+												<a href="#" class="paging__item">12</a>
+												<a href="#" class="paging__item">13</a>
+												<a href="#" class="paging__item">...</a>
+												<a href="#" class="paging__item">29</a>
+												<a href="#" class="paging__item paging__item--next"></a>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
+					</form>
+					<!--end CONTENT-PART -->
 				</div>
-				<!--end CONTENT-PART -->
 			</div>
 			<footer class="page-footer">
 				<div class="container">

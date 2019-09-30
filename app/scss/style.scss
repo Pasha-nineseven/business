@@ -1443,4 +1443,28 @@ textarea, input {
     margin-bottom: 10px;
 }
 
+.control__date{
+    padding-right: 10px;
+}
+.add-remind{
+    overflow: hidden;
+    color: #87BC26;
+    font-size: 15px;
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+}
+.add-remind__icon{
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    float: left;
+    background: url(../img/content/plus.png) no-repeat;
+}
+.add-remind__txt{
+
+}
+
+
 @import "components/media";

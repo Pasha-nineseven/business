@@ -1361,6 +1361,25 @@ textarea, input {
 .control__add {
   margin-bottom: 10px; }
 
+.control__date {
+  padding-right: 10px; }
+
+.add-remind {
+  overflow: hidden;
+  color: #87BC26;
+  font-size: 15px;
+  position: relative;
+  display: inline-block;
+  margin-left: 20px; }
+
+.add-remind__icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  float: left;
+  background: url(../img/content/plus.png) no-repeat; }
+
 @media screen and (max-width: 1200px) {
   .half-inner {
     padding-right: 0;
@@ -1685,7 +1704,9 @@ textarea, input {
   .remove__txt {
     display: none; }
   .remove__icon {
-    display: block; } }
+    display: block; }
+  .add-remind__txt {
+    display: none; } }
 
 @media screen and (max-width: 400px) {
   .page-aside--filter {

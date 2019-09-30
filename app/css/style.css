@@ -481,8 +481,11 @@ textarea, input {
 
 .page-content {
   display: table-cell;
-  height: 100%;
-  overflow: hidden; }
+  height: 100%; }
+  .page-content:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .page-content .conteiner {
   padding-bottom: 10px;
@@ -493,7 +496,6 @@ textarea, input {
 
 .page-search__form {
   background: #fff;
-  overflow: hidden;
   -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.12);
   height: 48px;
@@ -1150,7 +1152,8 @@ textarea, input {
 .search {
   padding-bottom: 10px; }
   .search .page-search__form {
-    margin-bottom: 24px; }
+    margin-bottom: 24px;
+    z-index: 4; }
     .search .page-search__form input[type="text"],
     .search .page-search__form input[type="email"],
     .search .page-search__form input[type="password"] {
@@ -1293,6 +1296,20 @@ textarea, input {
     position: absolute;
     top: 0;
     right: 0; }
+
+.page-search {
+  position: relative; }
+  .page-search select {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    z-index: 3;
+    margin-top: -24px; }
+
+.search-form-toggle {
+  display: none; }
 
 @media screen and (max-width: 1200px) {
   .half-inner {
@@ -1525,7 +1542,23 @@ textarea, input {
       width: auto;
       overflow: visible; }
   .page-aside--lg {
-    display: none; } }
+    display: none; }
+  .search-form {
+    margin-bottom: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+  .page-aside--filter {
+    display: none;
+    width: 343px;
+    position: absolute;
+    z-index: 5;
+    margin-top: 49px;
+    right: 121px;
+    top: 0; }
+    .page-aside--filter.active {
+      display: block; }
+  .search-form-toggle {
+    display: block; } }
 
 @media screen and (max-width: 600px) {
   .container {
@@ -1545,7 +1578,7 @@ textarea, input {
     height: -webkit-calc(100% - 60px);
     height: calc(100% - 60px); }
   .page-search__submit {
-    display: none; }
+    display: none !important; }
   .enter__form {
     padding: 0 20px 24px;
     max-width: 100%; }
@@ -1593,4 +1626,13 @@ textarea, input {
     width: 200%;
     -webkit-transform: none;
         -ms-transform: none;
-            transform: none; } }
+            transform: none; }
+  .page-aside--filter {
+    right: 16px; }
+  .search-form {
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); } }
+
+@media screen and (max-width: 400px) {
+  .page-aside--filter {
+    width: 290px; } }

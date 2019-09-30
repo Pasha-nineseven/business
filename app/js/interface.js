@@ -29,6 +29,16 @@ function classList() {
 		});
 	}
 
+
+	//SEARCH-FORM TOGGLE
+	var searchformBtn = document.querySelector('.js-search-form-toggle');
+	var asideFilter = document.querySelector('.page-aside--filter');
+	if (typeof(searchformBtn) != 'undefined' && searchformBtn != null){
+		searchformBtn.addEventListener( "click", function() {
+			asideFilter.classList.toggle('active');
+		});
+	}
+
 }
 document.addEventListener("DOMContentLoaded", classList);
 

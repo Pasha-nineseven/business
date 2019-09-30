@@ -74,6 +74,7 @@ var divStr = 	'<div style="position: fixed; z-index: 1005; bottom: 0; right: 0; 
         				<li><a href="document.html">Документ</a></li> \
         				<li><a href="search.html">Поиск</a></li> \
         				<li><a href="control1.html">Закладки на к.</a></li> \
+        				<li><a href="control2.html">Документы на к.</a></li> \
 					</ol> \
 				</div>';
 document.getElementsByTagName('body')[0].innerHTML += divStr;

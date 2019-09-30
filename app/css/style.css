@@ -1319,7 +1319,8 @@ textarea, input {
   border-radius: 4px;
   width: 100%;
   margin-bottom: 24px;
-  background: #fff; }
+  background: #fff;
+  padding-bottom: 30px; }
   .control .item--title:after {
     content: "";
     display: table;

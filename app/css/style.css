@@ -955,7 +955,6 @@ textarea, input {
 .enter__top {
   border-bottom: 1px solid #E0E0E0;
   padding: 4px 10px;
-  text-align: center;
   color: #F39100;
   font-size: 22px;
   margin-bottom: 2px; }
@@ -1380,6 +1379,27 @@ textarea, input {
   float: left;
   background: url(../img/content/plus.png) no-repeat; }
 
+.t-center {
+  text-align: center; }
+
+.add-form {
+  padding: 6px 8px 24px; }
+
+.add-submit {
+  padding-top: 4px; }
+  .add-submit input[type="submit"] {
+    display: inline;
+    padding: 7px 21px; }
+
+.add-item {
+  margin-bottom: 20px; }
+
+.add-item--date {
+  max-width: 180px; }
+
+.add-label {
+  margin-bottom: 6px; }
+
 @media screen and (max-width: 1200px) {
   .half-inner {
     padding-right: 0;
@@ -1553,7 +1573,8 @@ textarea, input {
         -ms-transform: none;
             transform: none; }
   .enter {
-    padding: 0 15px; }
+    padding: 0 15px;
+    margin-bottom: 30px; }
   .page-aside {
     width: 100%;
     float: none; }
@@ -1706,7 +1727,9 @@ textarea, input {
   .remove__icon {
     display: block; }
   .add-remind__txt {
-    display: none; } }
+    display: none; }
+  .add-item--date {
+    max-width: 100%; } }
 
 @media screen and (max-width: 400px) {
   .page-aside--filter {

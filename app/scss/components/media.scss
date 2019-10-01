@@ -171,9 +171,11 @@
     max-width: 100%;
     position: static;
     transform: none;
+
   }
   .enter {
       padding: 0 15px;
+      margin-bottom: 30px;
   }
   .page-aside {
     width: 100%;
@@ -349,6 +351,9 @@
   }
   .add-remind__txt{
     display: none;
+  }
+  .add-item--date {
+    max-width: 100%;
   }
 }
 

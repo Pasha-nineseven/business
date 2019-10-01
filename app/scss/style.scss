@@ -948,7 +948,7 @@ textarea, input {
 .enter__top{
     border-bottom: 1px solid #E0E0E0;
     padding: 4px 10px;
-    text-align: center;
+    // text-align: center;
     color: #F39100;
     font-size: 22px;
     margin-bottom: 2px;
@@ -1466,5 +1466,30 @@ textarea, input {
 
 }
 
+.t-center{
+    text-align: center;
+}
+
+.add-form{
+    padding: 6px 8px 24px;
+}
+.add-submit{
+    padding-top: 4px;
+    input[type="submit"]{
+        display: inline;
+        padding: 7px 21px;
+    }
+}
+
+.add-item {
+    margin-bottom: 20px;
+}
+.add-item--date{
+    max-width: 180px;
+}
+
+.add-label {
+    margin-bottom: 6px;
+}
 
 @import "components/media";

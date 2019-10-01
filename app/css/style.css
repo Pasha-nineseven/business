@@ -1473,6 +1473,48 @@ textarea, input {
 .cabinet-forms .enter__item {
   margin-bottom: 15px; }
 
+.save,
+.question-link {
+  float: right;
+  width: auto;
+  font-size: 15px;
+  padding: 7px 25px;
+  margin-top: -5px; }
+
+.question-item {
+  margin-bottom: 15px; }
+
+.question-top {
+  margin-bottom: 5px; }
+
+.question-date {
+  font-weight: bold; }
+
+.question-time {
+  font-weight: bold;
+  padding-left: 1px; }
+
+.question-person {
+  font-weight: bold;
+  padding-left: 10px; }
+
+.question-rating {
+  padding-left: 13px;
+  font-style: italic; }
+  .question-rating span {
+    padding-left: 1px; }
+
+.question-wrap {
+  margin-bottom: 80px; }
+
+.question-list {
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+
+.question-icon {
+  float: left;
+  margin-right: 8px; }
+
 @media screen and (max-width: 1200px) {
   .half-inner {
     padding-right: 0;
@@ -1816,7 +1858,12 @@ textarea, input {
   .payer-link {
     float: none;
     display: block;
-    margin: 5px 0; } }
+    margin: 5px 0; }
+  .save, .question-link {
+    float: none;
+    margin: 10px 0; }
+  .question-wrap {
+    margin-bottom: 30px; } }
 
 @media screen and (max-width: 400px) {
   .page-aside--filter {

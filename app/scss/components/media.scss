@@ -355,6 +355,25 @@
   .add-item--date {
     max-width: 100%;
   }
+  .enter__item--double {
+      margin-right: 0;
+  }
+  .enter__half {
+    width: 100%;
+    padding-right: 0;
+    float: none;
+  }
+  .enter__half{
+    margin-bottom: 10px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  .payer-link {
+    float: none;
+    display: block;
+    margin: 5px 0;
+  }
 }
 
 

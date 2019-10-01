@@ -483,6 +483,7 @@ textarea, input {
 .page-content {
     display: table-cell;
     height: 100%;
+    padding-bottom: 30px;
     &:after{
         content: "";
         display: table;
@@ -962,6 +963,7 @@ textarea, input {
 
 .enter__item{
     margin-bottom: 10px;
+    position: relative;
 }
 .enter__label{
     font-size: 15px;
@@ -1490,6 +1492,102 @@ textarea, input {
 
 .add-label {
     margin-bottom: 6px;
+}
+
+.cabinet-top{
+    text-align: right;
+    margin-bottom: 24px;
+    input[type="submit"]{
+        display: inline;
+        width: auto;
+    }
+}
+
+.cabinet-item{
+    margin-bottom: 23px;
+    // &:last-child{
+    //     margin-bottom: 0;
+    // }
+    .check-wrap{
+        margin-bottom: 0;
+    }
+}
+
+.cabinet-add{
+    padding-left: 10px;
+    font-size: 11px;
+    color: #5C5C5C;
+    display: inline-block;
+}
+
+
+.page-aside--cabinet{
+    width: 405px;
+    .item__title{
+        &:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+    }
+}
+
+.payer-link{
+    float: right;
+    text-decoration: underline;
+    font-size: 11px;
+    color: #D7830A;
+    margin-top: 5px;
+    &:hover{
+        text-decoration: none;
+    }
+}
+.cabinet-conditions{
+    padding-top: 30px;
+    a{
+        text-decoration: underline;
+        color: #D7830A;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
+
+.necessary{
+    color: red;
+    font-size: 100%;
+    top: 0px;
+    padding-left: 3px;
+}
+
+.enter__item--double{
+    margin-right: -29px;
+    &:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.enter__half{
+    width: 50%;
+    padding-right: 29px;
+    float: left;
+    position: relative;
+}
+
+.enter__note{
+    color: #5C5C5C;
+    font-size: 11px;
+    position: absolute;
+    bottom: -13px;
+    left: 0;
+}
+
+.cabinet-forms{
+    .enter__item {
+        margin-bottom: 15px;
+    }
 }
 
 @import "components/media";

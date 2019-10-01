@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="format-detection" content="telephone=no"/>
+		<meta name="format-detection" content="address=no"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>test</title>
+		<!-- <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" /> -->
+		<link href="css/style.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<!--[if lte IE 8]>
+			<meta name="viewport" content="width=1366">
+			<link rel="stylesheet" type="text/css" href="css/ie8.css">
+		<![endif]-->
+		<!--[if lte IE 7]>
+			<link rel="stylesheet" type="text/css" href="css/ie7.css">
+		<![endif]-->
+	</head>
+	<body>
+		<!--LAYOUT-->
+		<div class="layout">
+			<header class="page-header">
+				<div class="container">
+					<div class="page-header__wrap">
+						<a href="#" class="menu-btn">
+							<span class="burger-icon"></span>
+						</a>
+						<div class="top-nav">
+							<a href="#" class="top-nav__item top-nav__item--desktop">Купить</a>
+							<a href="#" class="top-nav__item">Выйти</a>
+						</div>
+						<a href="#" class="top-logo">
+							<img src="img/content/logo.png" alt="">
+						</a>
+						<div class="top-search">
+							<a href="#" class="top-search__item">Поиск в базе</a>
+							<a href="#" class="top-search__item">Поиск в сообществе</a>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="menu-mobile">
+				<div class="menu-mobile__links">
+					<a href="#" class="top-search__item">Поиск в базе</a>
+					<a href="#" class="top-search__item">Поиск в сообществе</a>
+					<a href="#" class="menu-mobile__link">О программе</a>
+					<a href="#" class="menu-mobile__link">Стать экспертом</a>
+					<a href="#" class="menu-mobile__link">Купить</a>
+				</div>
+			</div>
+			<div class="menu-mobile__bg"></div>
+			<div class="wrapper">
+				<div class="page-content workarea">
+					<!-- CONTENT-PART -->
+					<form action="usrchg.dll" method="post">
+						<div class="container">
+							<div class="cabinet-top">
+								<input type="submit" value="Сохранить" class="btn">
+							</div>
+							<div class="page-aside page-aside--cabinet">
+								<div class="cabinet-form">
+									<div class="item item--title">
+										<div class="item__title">
+											Личный кабинет
+											<a href="#" class="payer-link">Кабинет плательщика</a>
+										</div>
+									</div>
+									<div class="item">
+										<div class="enter__item">
+											<div class="enter__label">Наименование организации<sup class="necessary">*</sup></div>
+											<input type="text" placeholder="Наименование">
+										</div>
+
+										<div class="enter__item enter__item--double">
+											<div class="enter__half">
+												<div class="enter__label">Логин<sup class="necessary">*</sup></div>
+												<input type="text" placeholder="прим. polechuk">
+												<span class="enter__note">Не менее 6 символов</span>
+											</div>
+											<div class="enter__half">
+												<div class="enter__label">Имя<sup class="necessary">*</sup></div>
+												<input type="text" placeholder="Введите имя">
+											</div>
+										</div>
+
+										<div class="enter__item enter__item--double">
+											<div class="enter__half">
+												<div class="enter__label">Пароль<sup class="necessary">*</sup></div>
+												<input type="password">
+												<span class="enter__note">Не менее 6 символов</span>
+											</div>
+											<div class="enter__half">
+												<div class="enter__label">Отчество<sup class="necessary">*</sup></div>
+												<input type="text" placeholder="Введите отчество">
+											</div>
+										</div>
+
+										<div class="enter__item enter__item--double">
+											<div class="enter__half">
+												<div class="enter__label">Повторите пароль<sup class="necessary">*</sup></div>
+												<input type="password">
+											</div>
+											<div class="enter__half">
+												<div class="enter__label">Фамилия<sup class="necessary">*</sup></div>
+												<input type="text" placeholder="Введите фамилию">
+											</div>
+										</div>
+
+										<div class="enter__item enter__item--double">
+											<div class="enter__half">
+												<div class="enter__label">Телефон<sup class="necessary">*</sup></div>
+												<input type="text" placeholder="+375 __ _______">
+											</div>
+											<div class="enter__half">
+												<div class="enter__label">Отчество<sup class="necessary">*</sup></div>
+												<input type="text" placeholder="Введите отчество">
+											</div>
+										</div>
+
+										<div class="enter__item">
+											<div class="enter__label">E-mail<sup class="necessary">*</sup></div>
+											<input type="text" placeholder="Введите e-mail">
+										</div>
+										<div class="cabinet-conditions">
+											<div class="check-wrap">
+												<input type="checkbox" id="checkbox5" name="block0">
+												<label for="checkbox5">
+													Я ознакомился(ась) с условиями <a href="#">Пользовательского соглашения</a>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="page-gen">
+								<div class="item item--title">
+									<div class="item__title">
+										Я эксперт
+										<span class="cabinet-add">
+											Укажите, в каких областях вы являетесь экспертом, чтобы получать уведомления о появлении вопросов, на которые вы можете дать ответ
+										</span>
+									</div>
+								</div>
+								<div class="item">
+									<div class="cabinet-item">
+										<div class="check-wrap">
+											<input type="checkbox" id="e1" name="e1">
+											<label for="e1">Бухгалтер. НДС. ЭСЧФ</label>
+										</div>
+									</div>
+									<div class="cabinet-item">
+										<div class="check-wrap">
+											<input type="checkbox" id="e2" name="e2">
+											<label for="e2">Бухгалтер. Налог на прибыль</label>
+										</div>
+									</div>
+									<div class="cabinet-item">
+										<div class="check-wrap">
+											<input type="checkbox" id="e3" name="e3">
+											<label for="e3">Бухгалтер. Налог на недвижимость, земельный налог</label>
+										</div>
+									</div>
+									<div class="cabinet-item">
+										<div class="check-wrap">
+											<input type="checkbox" id="e4" name="e4">
+											<label for="e4">Бухгалтер. Экологический налог</label>
+										</div>
+									</div>
+									<div class="cabinet-item">
+										<div class="check-wrap">
+											<input type="checkbox" id="e5" name="e5">
+											<label for="e5">Бухгалтер. Подоходный налог</label>
+										</div>
+									</div>
+									<div class="cabinet-item">
+										<div class="check-wrap">
+											<input type="checkbox" id="e6" name="e6">
+											<label for="e6">Бухгалтер. Взносы в ФСЗН, Белгосстрах</label>
+										</div>
+									</div>
+									<div class="cabinet-item">
+										<div class="check-wrap">
+											<input type="checkbox" id="e7" name="e7">
+											<label for="e7">Бухгалтер. Иные налоги, сборы, пошлины</label>
+										</div>
+									</div>
+									<div class="cabinet-item">
+										<div class="check-wrap">
+											<input type="checkbox" id="e8" name="e8">
+											<label for="e8">Бухгалтер. УСН</label>
+										</div>
+									</div>
+									<div class="cabinet-item">
+										<div class="check-wrap">
+											<input type="checkbox" id="e9" name="e9">
+											<label for="e9">Бухгалтер. Учет ОС и НМА</label>
+										</div>
+									</div>
+									<div class="cabinet-item">
+										<div class="check-wrap">
+											<input type="checkbox" id="e10" name="e10">
+											<label for="e10">Бухгалтер. Учет ТМЦ</label>
+										</div>
+									</div>
+									<div class="cabinet-item">
+										<div class="check-wrap">
+											<input type="checkbox" id="e11" name="e11">
+											<label for="e11">Бухгалтер. Учет труда и заработной платы</label>
+										</div>
+									</div>
+									<div class="cabinet-item">
+										<div class="check-wrap">
+											<input type="checkbox" id="e12" name="e12">
+											<label for="e12">Бухгалтер. Учет затрат на производство</label>
+										</div>
+									</div>
+									<div class="cabinet-item">
+										<div class="check-wrap">
+											<input type="checkbox" id="e13" name="e13">
+											<label for="e13">Бухгалтер. Учет готовой продукции, товаров и их реализации</label>
+										</div>
+									</div>
+									<div class="cabinet-item">
+										<div class="check-wrap">
+											<input type="checkbox" id="e14" name="e14">
+											<label for="e14">Бухгалтер. Учет финансовых результатов</label>
+										</div>
+									</div>
+									<div class="cabinet-item">
+										<div class="check-wrap">
+											<input type="checkbox" id="e15" name="e15">
+											<label for="e15">Бухгалтер. Учет денежных средств</label>
+										</div>
+									</div>
+									<div class="cabinet-item">
+										<div class="check-wrap">
+											<input type="checkbox" id="e16" name="e16">
+											<label for="e16">Бухгалтер. Учет валютных и псевдовалютных операций</label>
+										</div>
+									</div>
+									<div class="cabinet-item">
+										<div class="check-wrap">
+											<input type="checkbox" id="e17" name="e17">
+											<label for="e17">Бухгалтер. Учет расчетных операций (поставщики, покупатели, подотчетные лица, учредители, дебиторы, кредиторы)</label>
+										</div>
+									</div>
+									<div class="cabinet-item">
+										<div class="check-wrap">
+											<input type="checkbox" id="e18" name="e18">
+											<label for="e18">Бухгалтер. Учет источников собственных средств</label>
+										</div>
+									</div>
+									<div class="cabinet-item">
+										<div class="check-wrap">
+											<input type="checkbox" id="e19" name="e19">
+											<label for="e19">Бухгалтер. Учет кредитов, займов, финансовых вложений</label>
+										</div>
+									</div>
+									<div class="cabinet-item">
+										<div class="check-wrap">
+											<input type="checkbox" id="e20" name="e20">
+											<label for="e20">Бухгалтер. Подготовка отчетности (налоговая, статистическая, ведомственная, внутренняя, управленческая и т. д.)</label>
+										</div>
+									</div>
+									<div class="cabinet-item">
+										<div class="check-wrap">
+											<input type="checkbox" id="e21" name="e21">
+											<label for="e21">Кадровик. Кадровое делопроизводство</label>
+										</div>
+									</div>
+									<div class="cabinet-item">
+										<div class="check-wrap">
+											<input type="checkbox" id="e22" name="e22">
+											<label for="e22">Кадровик. Персонифицированный учет</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+					<!--end CONTENT-PART -->
+				</div>
+			</div>
+			<footer class="page-footer">
+				<div class="container">
+					<div class="page-footer__wrap">
+						<div class="copyright">
+							&copy; 2017, ООО "Профессиональные правовые системы", входит в структуру компаний Владимира Гревцова. Воспроизведение материалов сайта без письменного согласия владельца запрещено Политика конфиденциальности
+						</div>
+						<div class="page-footer__contacts">
+							<div class="contacts-item">
+								<div class="contacts-title">Контакт-центр</div>
+								<div class="page-footer__phones">
+									<span>+375 17 233-99-72</span>
+									<span>+375 17 233-99-73</span>
+								</div>
+								<div class="time">8:00-18:00</div>
+							</div>
+							<div class="contacts-item contacts-item--mail">
+								<div class="contacts-title">Напишите нам</div>
+								<a href="mailto:client@business-info.by" class="mail">
+									<span class="mail__icon"></span>
+									client@business-info.by
+								</a>	
+								<div class="socials">
+									<a href="#" class="socials__item">
+										<img src="img/content/ok.png" alt="">
+									</a>
+									<a href="#" class="socials__item">
+										<img src="img/content/vk.png" alt="">
+									</a>
+									<a href="#" class="socials__item">
+										<img src="img/content/fb.png" alt="">
+									</a>
+									<a href="#" class="socials__item">
+										<img src="img/content/tw.png" alt="">
+									</a>
+								</div>
+							</div>
+							<div class="contacts-item contacts-item--address">
+								<div class="contacts-title">Наш адрес</div>
+								<div class="address">
+									220034, г. Минск, ул. Платонова, 1Б, к. 521 
+									<a href="www.business-info.by" target="_blank">www.business-info.by</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+
+			
+		</div><!-- END LAYOUT-->
+		
+		<script src="js/interface.js"></script>
+	</body>
+</html>

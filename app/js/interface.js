@@ -77,10 +77,13 @@ var divStr = 	'<div style="position: fixed; z-index: 1005; bottom: 0; right: 0; 
         				<li><a href="control2.html">Документы на к.</a></li> \
         				<li><a href="control3.html">Л.напоминания</a></li> \
         				<li><a href="add-notif.html">Добавить напоминание</a></li> \
+        				<li><a href="thanks.html">Спасибо</a></li> \
         				<li><a href="cabinet.html">Личный кабинет</a></li> \
         				<li><a href="notif.html">Настр. нотификаций</a></li> \
         				<li><a href="questions.html">Вопросы</a></li> \
         				<li><a href="questions2.html">Вопросы2</a></li> \
+        				<li><a href="questions3.html">Задать вопрос</a></li> \
+        				<li><a href="logged-in.html">Вход выполнен</a></li> \
 					</ol> \
 				</div>';
 document.getElementsByTagName('body')[0].innerHTML += divStr;

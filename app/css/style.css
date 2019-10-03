@@ -1569,6 +1569,19 @@ textarea, input {
   .b-links__send:hover {
     text-decoration: none; }
 
+.logged-in {
+  text-align: center;
+  padding: 20px 10px; }
+  .logged-in .btn {
+    width: auto;
+    padding: 3px 5px;
+    max-width: 210px;
+    margin: 0 auto; }
+
+.logged-in__top {
+  font-size: 22px;
+  margin-bottom: 20px; }
+
 @media screen and (max-width: 1200px) {
   .half-inner {
     padding-right: 0;
@@ -1825,10 +1838,10 @@ textarea, input {
   .page-content .container {
     padding-left: 15px; }
   .top-logo {
-    float: none;
+    float: left;
     width: 170px;
     height: 50px;
-    margin: 4px auto 0;
+    margin: 4px 0 0 25px;
     display: block; }
   .menu-btn {
     margin-right: 0; }

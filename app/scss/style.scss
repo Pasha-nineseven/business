@@ -1716,5 +1716,21 @@ textarea, input {
     }
 }
 
+.logged-in{
+    text-align: center;
+        padding: 20px 10px;
+    .btn{
+        width: auto;
+        padding: 3px 5px;
+        max-width: 210px;
+        margin: 0 auto;
+    }
+}
+
+.logged-in__top{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
 
 @import "components/media";

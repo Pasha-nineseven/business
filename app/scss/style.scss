@@ -423,6 +423,17 @@ textarea, input {
     input[type="checkbox"]:checked + label:after {
         opacity: 1;
     }
+    textarea{
+        background: rgba(51, 51, 51, 0.06);
+        border-radius: 4px 4px 0px 0px;
+        border:0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.38); 
+        width: 100%;
+        padding: 5px 10px;
+        display: block;
+        color: #000;
+        resize:vertical;
+    }
 }
   .workarea h1 {
     margin: 0;
@@ -1632,7 +1643,15 @@ textarea, input {
 }
 
 .question-list{
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   .question-item{
+        &:first-child{
+            .question-person{
+                padding-left: 30px;
+                    background: url(../img/content/star.png) 12px 1px no-repeat;
+            }
+        }
+    }
 }
 
 .question-txt{
@@ -1644,5 +1663,58 @@ textarea, input {
     float: left;
     margin-right: 8px;
 }
+
+.question-item__links{
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+.quote{
+    font-weight: bold;
+    color: #87BC26;
+    &:hover{
+            color: #f39100;
+    }
+}
+
+.good{
+    display: block;
+    width: 21px;
+    height: 21px;
+    background: url(../img/content/good.png) no-repeat;
+    margin-right: 32px;
+    float: left;
+    +.quote{
+        padding-top: 3px;
+    }
+}
+
+.t-wrap{
+    padding-top: 20px;
+    
+    margin-bottom: 14px;
+    .btn{
+        float: right;
+        width: auto;
+        padding: 7px 15px;
+    }
+}
+
+.b-links{
+    overflow: hidden;
+    padding-bottom: 10px;
+    padding-top: 13px;
+}
+
+.b-links__send{
+    float: left;
+    text-decoration: underline;
+    color: #D7830A;
+    margin-top: 19px;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
 
 @import "components/media";

@@ -1582,6 +1582,26 @@ textarea, input {
   font-size: 22px;
   margin-bottom: 20px; }
 
+.comments-top {
+  display: block;
+  color: #D7830A;
+  padding-right: 30px;
+  padding-bottom: 5px;
+  background: url(../img/content/arrow-o.png) 99.5% 1px no-repeat; }
+
+.t-wrap--comments {
+  position: relative; }
+  .t-wrap--comments input[type="submit"] {
+    padding: 7px 16px;
+    position: absolute;
+    right: 0;
+    bottom: 0; }
+  .t-wrap--comments .b-links {
+    padding: 0; }
+
+.t-wrap__textarea {
+  padding-right: 130px; }
+
 @media screen and (max-width: 1200px) {
   .half-inner {
     padding-right: 0;
@@ -1830,7 +1850,14 @@ textarea, input {
     .page-aside--filter.active {
       display: block; }
   .search-form-toggle {
-    display: block; } }
+    display: block; }
+  .t-wrap--comments .b-links {
+    padding-bottom: 10px;
+    padding-top: 13px; }
+  .t-wrap--comments input[type="submit"] {
+    position: static; }
+  .t-wrap__textarea {
+    padding-right: 0; } }
 
 @media screen and (max-width: 600px) {
   .container {

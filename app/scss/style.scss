@@ -1732,5 +1732,29 @@ textarea, input {
     margin-bottom: 20px;
 }
 
+.comments-top{
+  display: block;
+  color: #D7830A;
+  padding-right: 30px;
+  padding-bottom: 5px;
+  background: url(../img/content/arrow-o.png) 99.5% 1px no-repeat;
+}
+
+.t-wrap--comments{
+  position: relative;
+  input[type="submit"]{
+    padding: 7px 16px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .b-links{
+    padding: 0;
+  }
+}
+
+.t-wrap__textarea{
+  padding-right: 130px;
+}
 
 @import "components/media";

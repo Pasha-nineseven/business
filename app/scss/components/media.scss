@@ -261,6 +261,16 @@
   .search-form-toggle{
     display: block;
   }
+    .t-wrap--comments .b-links {
+        padding-bottom: 10px;
+        padding-top: 13px;
+    }
+    .t-wrap--comments input[type="submit"]{
+        position: static;
+    }
+    .t-wrap__textarea {
+        padding-right: 0;
+    }
 }
 
 @media screen and (max-width: 600px) {

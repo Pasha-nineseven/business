@@ -1,0 +1,29 @@
+.check-wrap label{
+	display: block;
+	position: relative;
+    cursor: pointer;
+    padding-left: 29px;
+    line-height: 15px;
+}
+
+.check-wrap input[type='checkbox']{
+	position: absolute;
+}
+
+.workarea input[type="text"],
+.workarea input[type="email"],
+.workarea input[type="password"],
+.workarea textarea,
+.workarea select{
+	background: #f3f3f3;
+	border-bottom: 1px solid #ccc;
+}
+
+.enter__in{
+	margin-left: -351px;
+	margin-top: -129px;;
+}
+
+.search-list-result__link{
+	display: inline;
+}

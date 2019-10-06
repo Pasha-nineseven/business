@@ -1,66 +1,64 @@
 function classList() {
-	//MENU-MOBILE TOGGLE
+	
 	var menuBtn = document.querySelector('.menu-btn');
 	var	menu    = document.querySelector('.menu-mobile');
 	var	menuBg  = document.querySelector('.menu-mobile__bg');
 	var	body    = document.body;
 
-	menuBtn.addEventListener( "click", function() {
-    	this.classList.toggle('active');
-    	menu.classList.toggle('active');
-    	menuBg.classList.toggle('active');
-    	body.classList.toggle('fixed');
+	//MENU-MOBILE TOGGLE
+	menuBtn.addEventListener('click', function() {
+	    toggleClass(menuBtn, 'active');
+	    toggleClass(menu, 'active');
+	    toggleClass(menuBg, 'active');
+	    toggleClass(body, 'fixed');
 	});
 
 	//FILTER TOGGLE
 	var filterBtn = document.querySelector('.js-filters-toggle-link');
 	if (typeof(filterBtn) != 'undefined' && filterBtn != null){
 		filterBtn.addEventListener( "click", function() {
-			this.classList.toggle('active');
-			this.parentNode.classList.toggle('active');
+			toggleClass(this, 'active');
+			toggleClass(this.parentNode, 'active');
 		});
 	}
 	//CONTENTS TOGGLE
 	var contentsBtn = document.querySelector('.js-contents-toggle-link');
 	if (typeof(contentsBtn) != 'undefined' && contentsBtn != null){
 		contentsBtn.addEventListener( "click", function() {
-			this.classList.toggle('active');
-			this.parentNode.classList.toggle('active');
+			toggleClass(this, 'active');
+			toggleClass(this.parentNode, 'active');
 		});
 	}
-
 
 	//SEARCH-FORM TOGGLE
 	var searchformBtn = document.querySelector('.js-search-form-toggle');
 	var asideFilter = document.querySelector('.page-aside--filter');
 	if (typeof(searchformBtn) != 'undefined' && searchformBtn != null){
 		searchformBtn.addEventListener( "click", function() {
-			asideFilter.classList.toggle('active');
+			toggleClass(asideFilter, 'active');
 		});
 	}
 
 }
+
+function toggleClass(element, className){
+    if (!element || !className){
+        return;
+    }
+    var classString = element.className, nameIndex = classString.indexOf(className);
+    if (nameIndex == -1) {
+        classString += ' ' + className;
+    }
+    else {
+        classString = classString.substr(0, nameIndex) + classString.substr(nameIndex+className.length);
+    }
+    element.className = classString;
+}
+
+
 document.addEventListener("DOMContentLoaded", classList);
 
-
-//FILTER TOGGLE
-// function filterToggle() {
-// }
-
-// document.addEventListener("DOMContentLoaded", filterToggle);
-
-//CONTENTS TOGGLE
-// function contentsToggle() {
-// }
-// var contentsBtn = document.getElementsByClassName('.js-contents-toggle-link')[0];
-
-// contentsBtn.addEventListener( "click", function() {
-// 	this.classList.toggle('active');
-// 	this.parentNode.classList.toggle('active');
-// });
-// document.addEventListener("DOMContentLoaded", contentsToggle);
-
-
+//PAGES-LIST (remove)
 var divStr = 	'<div style="position: fixed; z-index: 1005; bottom: 0; right: 0; background: #fff; border: solid 1px #828286; width: 160px;"> \
 					<a href="javascript:void(0);" style="float: right;background:#ccc; color:#000; padding: 5px 10px; text-decoration: none; font-size: 14px" onclick="this.parentNode.remove();">Close X</a> \
 					<style> \

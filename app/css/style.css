@@ -228,6 +228,7 @@ body {
   -webkit-font-smoothing: antialiased;
   font-size: 15px;
   font-family: Arial, sans-serif;
+  overflow-x: hidden;
   color: #000; }
 
 body.fixed {
@@ -369,7 +370,12 @@ textarea, input {
     font-weight: bold;
     color: #fff;
     border: 0;
-    display: block; }
+    display: block;
+    -webkit-transition: background 0.3s ease;
+    transition: background 0.3s ease; }
+    .workarea input[type="submit"]:hover {
+      background: #F39100;
+      color: #fff; }
   .workarea select {
     background: rgba(51, 51, 51, 0.06);
     border-radius: 4px 4px 0px 0px;
@@ -524,7 +530,12 @@ textarea, input {
   right: 0;
   top: 0;
   height: 100%;
-  padding: 0 16px; }
+  padding: 0 16px;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease; }
+  .page-search__submit:hover {
+    background: #F39100;
+    color: #fff; }
 
 .page-search__input {
   width: 100%;
@@ -552,7 +563,7 @@ textarea, input {
 
 .content-item {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   width: 100%;
   margin-bottom: 24px;
@@ -578,12 +589,15 @@ textarea, input {
   font-size: 22px;
   background: #87BC26;
   -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   width: 100%;
   padding: 10px 5px;
-  text-align: center; }
+  text-align: center;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease; }
   .btn:hover {
+    background: #F39100;
     color: #fff; }
 
 .item {
@@ -671,15 +685,46 @@ textarea, input {
   max-width: 70px; }
 
 .content-item--banner {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: right top;
+  overflow: hidden;
   position: relative;
   height: 152px;
   -webkit-box-shadow: none;
   box-shadow: none;
   text-align: right;
-  color: #F39100; }
+  padding: 3px;
+  color: #fff; }
+  .content-item--banner:hover {
+    color: #fff; }
+
+.banner-img {
+  float: left;
+  width: 50%;
+  height: 100%; }
+  .banner-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: 100%; }
+
+.banner-txt {
+  float: left;
+  width: 50%;
+  height: 100%;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 10px; }
+
+.banner__date {
+  display: block;
+  font-size: 22px;
+  margin-bottom: 5px; }
+
+.content-item--green {
+  background: #87BC26; }
+
+.content-item--orange {
+  background: #f59e20; }
 
 .banner-shadow {
   position: absolute;
@@ -688,21 +733,6 @@ textarea, input {
   background: url(../img/content/b-sh.png) no-repeat;
   width: 199px;
   height: 152px; }
-
-.banner-txt {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 199px;
-  z-index: 2;
-  padding: 10px 8px;
-  font-weight: bold;
-  line-height: 17px; }
-
-.banner-txt span {
-  display: block;
-  font-weight: normal;
-  margin-bottom: 10px; }
 
 .content-item--half {
   -webkit-box-shadow: none;
@@ -1089,7 +1119,8 @@ textarea, input {
   width: 20%; }
 
 .document-form__submit {
-  overflow: hidden; }
+  overflow: hidden;
+  padding-bottom: 4px; }
   .document-form__submit input[type="submit"] {
     float: right; }
 
@@ -1370,7 +1401,8 @@ textarea, input {
     padding-top: 20px; }
 
 .control__add {
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  display: block; }
 
 .control__date {
   padding-right: 10px; }
@@ -1510,7 +1542,8 @@ textarea, input {
 
 .question-rating {
   padding-left: 13px;
-  font-style: italic; }
+  font-style: italic;
+  color: #828282; }
   .question-rating span {
     padding-left: 1px; }
 
@@ -1601,6 +1634,20 @@ textarea, input {
 
 .t-wrap__textarea {
   padding-right: 130px; }
+
+.default {
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 24px;
+  background: #fff;
+  padding-bottom: 30px; }
+
+.default__link {
+  display: block;
+  margin-bottom: 15px;
+  color: #F59E1F; }
 
 @media screen and (max-width: 1200px) {
   .half-inner {

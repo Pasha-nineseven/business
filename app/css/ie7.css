@@ -1,0 +1,126 @@
+.layout{
+	display: block;
+	min-height: 100%;
+}
+
+.check-wrap label{
+	display: block;
+	position: relative;
+    cursor: pointer;
+    padding-left: 29px;
+    line-height: 15px;
+}
+
+.check-wrap input[type='checkbox']{
+	position: absolute;
+	top: -2px;
+}
+
+.workarea input[type="text"],
+.workarea input[type="email"],
+.workarea input[type="password"],
+.workarea textarea,
+.workarea select{
+	background: #f3f3f3;
+	border-bottom: 1px solid #ccc;
+	display: block;
+}
+.workarea input[type="text"],
+.workarea input[type="email"],
+.workarea input[type="password"],
+.workarea textarea{
+	padding: 2px 0!important;
+}
+
+.page-search__toggle{
+	right: 137px;
+}
+
+
+.page-search__input{
+	height: 47px;
+	padding: 0;
+	line-height: 47px;
+	position: absolute;
+	left: 50px;
+	width: 80%;
+}
+
+.banner-txt,
+.banner-img{
+	width: 48%;
+}
+.content-item--banner{
+	width: 100%; 
+}
+
+.enter__in{
+	margin-left: -351px;
+	margin-top: -129px;;
+}
+
+.search-list-result__link{
+	display: inline;
+}
+
+.t-wrap__textarea{
+	padding-right: 200px;
+}
+.t-wrap{
+	overflow: hidden;
+}
+.search .page-search__form input[type='text']{
+	padding: 0;
+}
+.enter__label{
+	margin-bottom: 0;
+}
+.enter__item--double{
+	margin-right: 0;
+}
+.enter__half{
+	width: 100%;
+	padding-right: 0;
+	margin-bottom: 10px;
+}
+.page-search select{
+	margin-top: -40px;
+}
+
+.page-footer{
+	position: relative;
+}
+
+
+.layout--index{
+	height: auto;
+}
+.layout--index .col-center{
+	margin-left: 320px;
+	margin-right: 320px;
+	overflow: visible;
+	padding: 0 10px;
+}
+
+.layout--index .layout{
+	min-height: 100%;
+	height: auto;
+}
+.half{
+	padding: 5px 0;
+	width: 49.9%;
+}
+.courses__item{
+	padding: 9px 0;
+	width: 32.93%;
+}
+.half-inner{
+	padding: 0;
+}
+.content-item--half{
+	margin-right: 0;
+	overflow: hidden;
+}
+.content-item--banner{
+	padding: 0;
+}

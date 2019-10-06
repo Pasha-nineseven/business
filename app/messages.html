@@ -59,92 +59,104 @@
 			<div class="wrapper">
 				<div class="page-content workarea">
 					<!-- CONTENT-PART -->
-					<div class="container">
-						<div class="item item--title">
-							<form action="#" method="post">
-								<input type="submit" value="Следить за темой" class="btn save">
-								<div class="item__title">
-									Вопрос
-								</div>
-							</form>
-						</div>
-						<div class="item">
-							<div class="question-item">
-								<div class="question-top">
-									<span class="question-date">21.06.2019</span>
-									<span class="question-time">14:16</span>
-									<span class="question-person">Polechuk</span>
-									<span class="question-rating">
-										Рейтинг:
-										<span>74,00</span>
-									</span>
-								</div>
-								<div class="question-txt">
-									Текст какого-то длинного вопроса: Учет приобретения АПС “БИ” и услуг по ее обслеживанию у пользователей при заключении договора о передаче и обслуживании ??
-								</div>
-							</div>
-							<div class="question-item">
-								<div class="question-top">
-									<span class="question-date">21.06.2019</span>
-									<span class="question-time">14:16</span>
-									<span class="question-person">Kurilenok</span>
-									<span class="question-rating">
-										Рейтинг:
-										<span>74,00</span>
-									</span>
-								</div>
-								<div class="question-txt">
-									Какой-то ответ на вопрос выше:  сельскохозяйственных животных (стад), идентификации и прослеживаемости продуктов животного происхождения и прослеживаемости продуктов животного происхождения
-								</div>
-								<div class="question-item__links">
-									<a href="#" class="good"></a><a href="#" class="quote">Цитировать</a>
-								</div>
-							</div>
-							<div class="question-item">
-								<div class="question-top">
-									<span class="question-date">21.06.2019</span>
-									<span class="question-time">14:16</span>
-									<span class="question-person">Polechuk</span>
-									<span class="question-rating">
-										Рейтинг:
-										<span>74,00</span>
-									</span>
-								</div>
-								<div class="question-txt">
-									Какой-то ответ на вопрос выше:  сельскохозяйственных животных (стад), идентификации и прослеживаемости продуктов животного происхождения и прослеживаемости продуктов животного происхождения
-								</div>
-								<div class="question-item__links">
-									<a href="#" class="good"></a><a href="#" class="quote">Цитировать</a>
-								</div>
-							</div>
-							<div class="question-item">
-								<div class="question-top">
-									<span class="question-date">21.06.2019</span>
-									<span class="question-time">14:16</span>
-									<span class="question-person">Kurilenok</span>
-									<span class="question-rating">
-										Рейтинг:
-										<span>74,00</span>
-									</span>
-								</div>
-								<div class="question-txt">
-									<i>“Цитата: Какой-то ответ на вопрос выше:  сельскохозяйственных животных (стад), идентификации и прослеживаемости продуктов животного происхождения и прослеживаемости продуктов животного происхождения”</i> Что-то прокомментированное
-								</div>
-								<form action="ps.dll" method="post">
-									<div class="question-item__links">
-										<a href="#" class="good"></a><a href="#" class="quote">Цитировать</a>
-									</div>
-									<div class="t-wrap">
-										<textarea placeholder="Введите текст" id="p" name="p" maxlength="1500" rows="7"></textarea>
-										<div class="b-links">
-											<a href="#" class="b-links__send">Отправить в редакцию</a>
-											<input type="submit" value="Отправить" class="btn">
+					<form action="#" method="post">
+						<div class="container">
+							<div class="page-aside page-aside--filter">
+								<div class="search-form">
+									<div class="item">
+										<div class="enter__item enter__item--date">
+											<div class="enter__label">Дата</div>
+											<div class="enter__add">С</div>
+											<input type="text" placeholder="__.__.____" name="enac_dat_from" maxlength="10">
+										</div>
+										<div class="enter__item enter__item--date">
+											<div class="enter__add">По</div>
+											<input type="text" placeholder="__.__.____" name="enac_dat_to" maxlength="10">
+										</div>
+										<div class="enter__item">
+											<div class="enter__label">Логин</div>
+											<input type="text" placeholder="Пользователь">
+										</div>
+										<br>
+										<div class="t-right">
+											<a href="#" class="search-form-reset">Очистить</a>
 										</div>
 									</div>
-								</form>
+								</div>
+							</div>
+							<div class="page-gen">
+								<div class="search">
+									<div class="page-search">
+										<div class="page-search__form">
+											<div class="page-search__icon"></div>
+											<a href="#" class="page-search__toggle search-form-toggle js-search-form-toggle"></a>
+											<input type="text" id="q" name="q" class="page-search__input inp_noborder" maxlength="130" autocomplete="off">
+											<input type="submit" class="page-search__submit" value="Найти">
+										</div>
+									</div>
+									<div class="content-item">
+										<div class="item item--title">
+											<a href="#" class="btn question-link">Задать вопрос</a>
+											<div class="item__title">
+												Сообщения модератора
+											</div>
+										</div>
+										<div class="item">
+											<div class="question-wrap">
+												<div class="question-item">
+													<div class="question-top">
+														<span class="question-date">21.06.2019</span>
+														<span class="question-time">14:16</span>
+														<span class="question-person">Polechuk</span>
+														<span class="question-rating">
+															Рейтинг:
+															<span>74,00</span>
+														</span>
+													</div>
+													<div class="question-txt">
+														Текст какого-то длинного вопроса: Учет приобретения АПС “БИ” и услуг по ее обслеживанию у пользователей при заключении договора о передаче и обслуживании ??
+													</div>
+												</div>
+												<div class="question-item">
+													<div class="question-top">
+														<span class="question-date">21.06.2019</span>
+														<span class="question-time">14:16</span>
+														<span class="question-person">Polechuk</span>
+														<span class="question-rating">
+															Рейтинг:
+															<span>74,00</span>
+														</span>
+													</div>
+													<div class="question-txt">
+														Текст какого-то длинного вопроса: Учет приобретения АПС “БИ” и услуг по ее обслеживанию у пользователей при заключении договора о передаче и обслуживании ??
+													</div>
+												</div>
+											</div>
+											<div class="paging">
+												<a href="#" class="paging__item paging__item--prev"></a>
+												<span class="paging__item active">1</span>
+												<a href="#" class="paging__item">2</a>
+												<a href="#" class="paging__item">3</a>
+												<a href="#" class="paging__item">4</a>
+												<a href="#" class="paging__item">5</a>
+												<a href="#" class="paging__item">6</a>
+												<a href="#" class="paging__item">7</a>
+												<a href="#" class="paging__item">8</a>
+												<a href="#" class="paging__item">9</a>
+												<a href="#" class="paging__item">10</a>
+												<a href="#" class="paging__item">11</a>
+												<a href="#" class="paging__item">12</a>
+												<a href="#" class="paging__item">13</a>
+												<a href="#" class="paging__item">...</a>
+												<a href="#" class="paging__item">29</a>
+												<a href="#" class="paging__item paging__item--next"></a>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
+					</form>
 					<!--end CONTENT-PART -->
 				</div>
 			</div>

@@ -46,9 +46,9 @@
 @media screen and (max-width: 1023px) {
   body {
     font-size: 15px; }
-  .page-content .container {
-    margin-right: -24px;
-    padding-left: 0; }
+  // .page-content .container {
+  //   margin-right: -24px;
+  //   padding-left: 0; }
   .top-nav__item--desktop {
     display: none; }
   .col-left {
@@ -57,7 +57,7 @@
   .col-right {
     width: 50%;
     float: left;
-    padding-right: 24px; }
+    padding-right: 0; }
   .col-center {
     padding: 0;
     width: 100%;
@@ -110,7 +110,10 @@
     display: none;
   }
   .page-gen {
-    padding: 0 24px;}
+        padding: 0 0px 0 24px;}
+    .comments{
+
+    }
   }
 
 @media screen and (max-width: 900px) {

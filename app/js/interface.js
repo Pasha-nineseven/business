@@ -1,5 +1,4 @@
 function classList() {
-	
 	var menuBtn = document.querySelector('.menu-btn');
 	var	menu    = document.querySelector('.menu-mobile');
 	var	menuBg  = document.querySelector('.menu-mobile__bg');

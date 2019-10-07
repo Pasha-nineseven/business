@@ -84,7 +84,7 @@
 	margin-bottom: 10px;
 }
 .page-search select{
-	margin-top: -40px;
+	margin-top: -44px;
 }
 
 .page-footer{
@@ -123,4 +123,16 @@
 }
 .content-item--banner{
 	padding: 0;
+}
+
+.search .page-search__form input[type='text']{
+	position: absolute;
+	left: 50px;
+	width: 80%;
+	top: 0;
+	height: 44px;
+	line-height: 44px;
+}
+.wrapper{
+	padding-bottom: 50px;
 }

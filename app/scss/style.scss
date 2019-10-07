@@ -1055,8 +1055,15 @@ textarea, input {
 .page-gen{
     overflow: hidden;
     padding: 0 0 0 24px;
+    .item__title{
+      overflow: hidden;
+    }
 }
-
+.title-l{
+  width: 120px;
+    display: table-cell;
+    vertical-align: middle;
+}
 
 .item--top{
     padding: 3px 8px;
@@ -1575,10 +1582,13 @@ textarea, input {
 }
 
 .cabinet-add{
-    padding-left: 10px;
+    /* padding-left: 10px; */
     font-size: 11px;
     color: #5C5C5C;
     display: inline-block;
+    /* overflow: hidden; */
+    display: table-cell;
+    vertical-align: middle;
 }
 
 
@@ -1605,6 +1615,7 @@ textarea, input {
 }
 .cabinet-conditions{
     padding-top: 30px;
+    position: relative;
     a{
         text-decoration: underline;
         color: #D7830A;
@@ -1612,6 +1623,10 @@ textarea, input {
             text-decoration: none;
         }
     }
+}
+
+.cabinet-save-mobile{
+    display: none;
 }
 
 .necessary{
@@ -1623,6 +1638,7 @@ textarea, input {
 
 .enter__item--double{
     margin-right: -29px;
+    margin-bottom: 15px;
     &:after{
         content: "";
         display: table;

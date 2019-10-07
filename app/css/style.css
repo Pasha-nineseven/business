@@ -1033,6 +1033,13 @@ textarea, input {
 .page-gen {
   overflow: hidden;
   padding: 0 0 0 24px; }
+  .page-gen .item__title {
+    overflow: hidden; }
+
+.title-l {
+  width: 120px;
+  display: table-cell;
+  vertical-align: middle; }
 
 .item--top {
   padding: 3px 8px;
@@ -1458,10 +1465,13 @@ textarea, input {
     margin-bottom: 0; }
 
 .cabinet-add {
-  padding-left: 10px;
+  /* padding-left: 10px; */
   font-size: 11px;
   color: #5C5C5C;
-  display: inline-block; }
+  display: inline-block;
+  /* overflow: hidden; */
+  display: table-cell;
+  vertical-align: middle; }
 
 .page-aside--cabinet {
   width: 405px; }
@@ -1480,12 +1490,16 @@ textarea, input {
     text-decoration: none; }
 
 .cabinet-conditions {
-  padding-top: 30px; }
+  padding-top: 30px;
+  position: relative; }
   .cabinet-conditions a {
     text-decoration: underline;
     color: #D7830A; }
     .cabinet-conditions a:hover {
       text-decoration: none; }
+
+.cabinet-save-mobile {
+  display: none; }
 
 .necessary {
   color: red;
@@ -1494,7 +1508,8 @@ textarea, input {
   padding-left: 3px; }
 
 .enter__item--double {
-  margin-right: -29px; }
+  margin-right: -29px;
+  margin-bottom: 15px; }
   .enter__item--double:after {
     content: "";
     display: table;
@@ -1927,7 +1942,24 @@ textarea, input {
   .search .page-search__form input[type="text"],
   .search .page-search__form input[type="email"],
   .search .page-search__form input[type="password"] {
-    padding: 0 180px 0 50px; } }
+    padding: 0 180px 0 50px; }
+  .cabinet-save-mobile {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 20px; }
+  .cabinet-conditions {
+    padding: 30px 166px 20px 0; }
+  .cabinet-top {
+    display: none; }
+  .page-gen .cabinet-save-mobile {
+    position: static;
+    text-align: right; }
+    .page-gen .cabinet-save-mobile input[type="submit"] {
+      display: inline-block;
+      width: auto; }
+  .cabinet-form__items {
+    max-width: 388px; } }
 
 @media screen and (max-width: 600px) {
   body {
@@ -2086,4 +2118,22 @@ textarea, input {
     margin-bottom: 0; }
   .question-list {
     -webkit-box-shadow: none;
-            box-shadow: none; } }
+            box-shadow: none; }
+  .cabinet-conditions {
+    padding-right: 0;
+    padding-bottom: 0; }
+  .cabinet-save-mobile {
+    position: static;
+    display: block;
+    margin-top: 20px;
+    text-align: right; }
+    .cabinet-save-mobile input[type="submit"] {
+      display: inline-block;
+      width: auto; }
+  .title-l {
+    display: block;
+    width: 100%; }
+  .cabinet-add {
+    display: block; }
+  .cabinet-form__items {
+    max-width: 100%; } }

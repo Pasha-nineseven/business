@@ -295,6 +295,31 @@
     .search .page-search__form input[type="password"] {
       padding: 0 180px 0 50px;
     }
+    .cabinet-save-mobile{
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 20px;
+    }
+    .cabinet-conditions{
+      padding: 30px 166px 20px 0;
+    }
+    .cabinet-top{
+      display: none;
+    }
+    .page-gen{
+      .cabinet-save-mobile{
+        position: static;
+        text-align: right;
+        input[type="submit"]{
+          display: inline-block;
+          width: auto;
+        }
+      }
+    }
+    .cabinet-form__items{
+      max-width: 388px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -490,6 +515,31 @@
   .question-list{
     box-shadow:none;
   }
+  .cabinet-conditions{
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+  .cabinet-save-mobile{
+    position: static;
+    display: block;
+    margin-top: 20px;
+    text-align: right;
+    input[type="submit"]{
+      display: inline-block;
+      width: auto;
+    }
+  }
+  .title-l{
+    display: block;
+    width: 100%;
+  }
+  .cabinet-add{
+    display: block;
+  }
+  .cabinet-form__items{
+    max-width: 100%;
+  }
+
 }
 
 

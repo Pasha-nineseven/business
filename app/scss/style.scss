@@ -702,10 +702,11 @@ textarea, input {
     width: 50%;
     height: 100%;
     img{
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit:100%;
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      max-width: 100%;
     }
 }
 .banner-txt{
@@ -814,7 +815,7 @@ textarea, input {
   background-color: #fff;
   position: fixed;
   left: -300px;
-  top: 62px;
+  top: 60px;
   bottom: 0;
   height: -webkit-calc(100% - 62px);
   height: calc(100% - 62px);
@@ -1261,7 +1262,7 @@ textarea, input {
         input[type="password"] {
             background: #fff;
             border-bottom: 0;
-            padding: 0 180px 0 50px;
+            padding: 0 130px 0 50px;
         }
     }
     input[type="submit"]{
@@ -1707,11 +1708,14 @@ textarea, input {
 .question-txt{
     // background: url(../img/content/comment.png) 0px 0px no-repeat;
     // padding-left: 30px;
+    display: table;
 }
 
 .question-icon{
-    float: left;
-    margin-right: 8px;
+        padding-right: 8px;
+    display: table-cell;
+        position: relative;
+    top: 7px;
 }
 
 .question-item__links{

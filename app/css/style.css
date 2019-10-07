@@ -704,7 +704,8 @@ textarea, input {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: 100%; }
+    object-fit: cover;
+    max-width: 100%; }
 
 .banner-txt {
   float: left;
@@ -801,7 +802,7 @@ textarea, input {
   background-color: #fff;
   position: fixed;
   left: -300px;
-  top: 62px;
+  top: 60px;
   bottom: 0;
   height: -webkit-calc(100% - 62px);
   height: calc(100% - 62px);
@@ -1201,7 +1202,7 @@ textarea, input {
     .search .page-search__form input[type="password"] {
       background: #fff;
       border-bottom: 0;
-      padding: 0 180px 0 50px; }
+      padding: 0 130px 0 50px; }
   .search input[type="submit"] {
     font-size: 22px;
     padding: 0 16px;
@@ -1557,9 +1558,14 @@ textarea, input {
     padding-left: 30px;
     background: url(../img/content/star.png) 12px 1px no-repeat; }
 
+.question-txt {
+  display: table; }
+
 .question-icon {
-  float: left;
-  margin-right: 8px; }
+  padding-right: 8px;
+  display: table-cell;
+  position: relative;
+  top: 7px; }
 
 .question-item__links {
   padding-top: 10px;
@@ -1648,6 +1654,14 @@ textarea, input {
   display: block;
   margin-bottom: 15px;
   color: #F59E1F; }
+
+@media screen and (max-height: 600px) {
+  .enter__in {
+    position: static;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    margin: 0 auto; } }
 
 @media screen and (max-width: 1200px) {
   .half-inner {
@@ -1757,7 +1771,15 @@ textarea, input {
   .top-search {
     display: none; }
   .page-gen {
-    padding: 0 0px 0 24px; } }
+    padding: 0 0px 0 24px; }
+  .top-logo {
+    float: none;
+    position: absolute;
+    left: 50%;
+    margin-left: -103px;
+    top: 3px; }
+  .page-header {
+    height: 60px; } }
 
 @media screen and (max-width: 900px) {
   .copyright {
@@ -1766,7 +1788,7 @@ textarea, input {
   .page-footer__contacts {
     width: 60%; } }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .page-footer__wrap {
     overflow: hidden;
     display: -webkit-box;
@@ -1888,7 +1910,7 @@ textarea, input {
     width: 343px;
     position: absolute;
     z-index: 5;
-    margin-top: 49px;
+    margin-top: 48px;
     right: 121px;
     top: 0; }
     .page-aside--filter.active {
@@ -1901,18 +1923,44 @@ textarea, input {
   .t-wrap--comments input[type="submit"] {
     position: static; }
   .t-wrap__textarea {
-    padding-right: 0; } }
+    padding-right: 0; }
+  .search .page-search__form input[type="text"],
+  .search .page-search__form input[type="email"],
+  .search .page-search__form input[type="password"] {
+    padding: 0 180px 0 50px; } }
 
 @media screen and (max-width: 600px) {
+  body {
+    background: #fff; }
+  .layout--index {
+    background: #E5E5E5; }
+    .layout--index .page-header {
+      margin-bottom: 26px;
+      border-bottom: 0; }
+    .layout--index .page-footer {
+      border-top: 0; }
+  .enter {
+    padding: 26px 0 0;
+    margin-bottom: 0; }
+  .enter__in {
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+  .enter__top {
+    margin-bottom: 15px; }
+  .page-header {
+    margin-bottom: 0;
+    border-bottom: 1px solid #E5E5E5; }
+  .page-footer {
+    border-top: 3px solid #E5E5E5; }
   .container {
     padding: 0 15px; }
   .page-content .container {
     padding-left: 15px; }
   .top-logo {
-    float: left;
     width: 170px;
     height: 50px;
-    margin: 4px 0 0 25px;
+    margin-left: -85px;
+    top: 6px;
     display: block; }
   .menu-btn {
     margin-right: 0; }
@@ -1921,14 +1969,24 @@ textarea, input {
     height: -webkit-calc(100% - 60px);
     height: calc(100% - 60px); }
   .page-search__submit {
-    display: none !important; }
+    background: #87BC26 url(../img/content/search-w.png) center no-repeat;
+    display: inline-block;
+    text-indent: -9999em;
+    width: 48px;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important; }
+  .search input[type="submit"] {
+    background: #87BC26 url(../img/content/search-w.png) center no-repeat !important; }
+  .page-search__input {
+    padding: 0 110px 0 50px; }
   .enter__form {
     padding: 0 20px 24px;
     max-width: 100%; }
   .page-search__toggle {
-    right: 0;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px; }
+    right: 48px;
+    width: 48px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px; }
   .page-aside .content-item {
     width: 50%; }
   .contents-toggle-link,
@@ -1945,13 +2003,14 @@ textarea, input {
     border-left: 1px solid transparent !important; }
   .item--contents,
   .item--filters {
-    border-top: 0; }
+    border-top: 0;
+    padding: 20px 15px 25px 15px; }
   .page-aside {
     margin-bottom: 0;
     -webkit-box-shadow: none;
             box-shadow: none; }
   .document {
-    padding: 15px; }
+    padding: 15px 0; }
   .document__item {
     padding-left: 0; }
   .document__links {
@@ -1971,7 +2030,10 @@ textarea, input {
         -ms-transform: none;
             transform: none; }
   .page-aside--filter {
-    right: 16px; }
+    right: 0;
+    margin-top: 79px;
+    width: 100%;
+    padding: 0 15px; }
   .search-form {
     -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
@@ -2001,8 +2063,27 @@ textarea, input {
     float: none;
     margin: 10px 0; }
   .question-wrap {
-    margin-bottom: 30px; } }
-
-@media screen and (max-width: 400px) {
-  .page-aside--filter {
-    width: 290px; } }
+    margin-bottom: 30px; }
+  .page-gen .content-item {
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+  .page-aside--document {
+    width: -webkit-calc(100% + 30px);
+    width: calc(100% + 30px);
+    margin: 0 -15px; }
+  .document-form-links {
+    padding: 10px 0; }
+  .search .page-search__form input[type="text"],
+  .search .page-search__form input[type="email"],
+  .search .page-search__form input[type="password"] {
+    padding: 0 110px 0 50px; }
+  .search {
+    padding: 30px 0 0; }
+  .search-list {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0;
+    margin-bottom: 0; }
+  .question-list {
+    -webkit-box-shadow: none;
+            box-shadow: none; } }

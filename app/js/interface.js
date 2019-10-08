@@ -67,10 +67,52 @@ function classList() {
 
 		document.body.addEventListener("click", function(e) {
 		  	var target = e.target || e.srcElement;
-			if (target !== asideFilter && target !== searchformBtn && !isChildOf(target, asideFilter,)) {
-				removeClass(asideFilter,"active");
+		  
+			if (target !== asideFilter && target !== searchformBtn && !isChildOf(target, asideFilter)) {
+			    removeClass(asideFilter,"active");
 			}
 		}, false);
+	}
+
+
+
+	//CHECK RESOLUTION
+	// var x = window.matchMedia("(max-width: 600px)");
+	// checkResolution(x);
+	// x.addListener(checkResolution);
+
+	// function checkResolution(x) {
+	//   	if (x.matches) { // If media query matches
+	//     	document.body.style.backgroundColor = "yellow";
+	//   	} else {
+	//     	document.body.style.backgroundColor = "pink";
+	//   	}
+	// }
+
+	//CHECK ALL AND SCROLL
+	var checkAllBtn = document.querySelector('.checkAll');
+	if (typeof(checkAllBtn) != 'undefined' && checkAllBtn != null){
+
+		checkAllBtn.addEventListener( "click", function() {
+			var checkboxes = document.getElementsByName("notif");
+			for(var i = 0; i < checkboxes.length; i++) {
+			    if(checkboxes[i].type == "checkbox") {
+			        checkboxes[i].checked = true; 
+			    }  
+			}
+		});
+	}
+	//UNCHECK ALL AND SCROLL
+	var unCheckAllBtn = document.querySelector('.uncheckAll');
+	if (typeof(unCheckAllBtn) != 'undefined' && unCheckAllBtn != null){
+		unCheckAllBtn.addEventListener( "click", function() {
+			var checkboxes = document.getElementsByName("notif");
+			for(var i = 0; i < checkboxes.length; i++) {
+			    if(checkboxes[i].type == "checkbox") {
+			        checkboxes[i].checked = false; 
+			    }  
+			}
+		});
 	}
 
 }

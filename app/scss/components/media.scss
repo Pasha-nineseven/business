@@ -556,6 +556,43 @@
   .notification-save-mobile{
     display: block;
   }
+  .page-gen{
+    overflow: visible;
+  }
+  .remove {
+    padding: 7px 13px;
+  }
+  .control>.item--title{
+        padding: 20px 0 5px 0px;
+  }
+  .item--settings{
+    padding: 47px 8px 2px 8px;
+    position: relative;
+    .remove {
+        float: none;
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 15px;
+    }
+  }
+  .add-remind {
+    display: inline-block;
+    margin-left: 0;
+    position: absolute;
+    top: 15px;
+    left: 6px;
+  }
+  .comments{
+    margin-bottom: 0;
+    box-shadow:none;
+    border-radius: 0;
+  }
+  .enter__item--mobile-hight{
+    textarea{
+      height: 63px;
+    }
+  }
 }
 
 

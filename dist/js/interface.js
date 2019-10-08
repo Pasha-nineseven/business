@@ -18,6 +18,9 @@ function classList() {
 		filterBtn.addEventListener( "click", function() {
 			toggleClass(this, 'active');
 			toggleClass(this.parentNode, 'active');
+
+			removeClass(contentsBtn.parentNode,"active");
+			removeClass(contentsBtn,"active");
 		});
 	}
 	//CONTENTS TOGGLE
@@ -26,8 +29,33 @@ function classList() {
 		contentsBtn.addEventListener( "click", function() {
 			toggleClass(this, 'active');
 			toggleClass(this.parentNode, 'active');
+
+			removeClass(filterBtn.parentNode,"active");
+			removeClass(filterBtn,"active");
 		});
 	}
+
+	//CLICK OUTSIDE -- filter
+	var filtersOut = document.querySelector('.content-item--filter');
+	document.body.addEventListener("click", function(e) {
+	  	var target = e.target || e.srcElement;
+	  
+		if (target !== filtersOut && !isChildOf(target, filtersOut)) {
+		    removeClass(filterBtn.parentNode,"active");
+			removeClass(filterBtn,"active");
+		}
+	}, false);
+
+	//CLICK OUTSIDE -- contents
+	var contentsOut = document.querySelector('.content-item--contents');
+	document.body.addEventListener("click", function(e) {
+	  	var target = e.target || e.srcElement;
+	  
+		if (target !== contentsOut && !isChildOf(target, contentsOut)) {
+		    removeClass(contentsBtn.parentNode,"active");
+			removeClass(contentsBtn,"active");
+		}
+	}, false);
 
 	//SEARCH-FORM TOGGLE
 	var searchformBtn = document.querySelector('.js-search-form-toggle');
@@ -35,6 +63,55 @@ function classList() {
 	if (typeof(searchformBtn) != 'undefined' && searchformBtn != null){
 		searchformBtn.addEventListener( "click", function() {
 			toggleClass(asideFilter, 'active');
+		});
+
+		document.body.addEventListener("click", function(e) {
+		  	var target = e.target || e.srcElement;
+		  
+			if (target !== asideFilter && target !== searchformBtn && !isChildOf(target, asideFilter)) {
+			    removeClass(asideFilter,"active");
+			}
+		}, false);
+	}
+
+
+
+	//CHECK RESOLUTION
+	// var x = window.matchMedia("(max-width: 600px)");
+	// checkResolution(x);
+	// x.addListener(checkResolution);
+
+	// function checkResolution(x) {
+	//   	if (x.matches) { // If media query matches
+	//     	document.body.style.backgroundColor = "yellow";
+	//   	} else {
+	//     	document.body.style.backgroundColor = "pink";
+	//   	}
+	// }
+
+	//CHECK ALL AND SCROLL
+	var checkAllBtn = document.querySelector('.checkAll');
+	if (typeof(checkAllBtn) != 'undefined' && checkAllBtn != null){
+
+		checkAllBtn.addEventListener( "click", function() {
+			var checkboxes = document.getElementsByName("notif");
+			for(var i = 0; i < checkboxes.length; i++) {
+			    if(checkboxes[i].type == "checkbox") {
+			        checkboxes[i].checked = true; 
+			    }  
+			}
+		});
+	}
+	//UNCHECK ALL AND SCROLL
+	var unCheckAllBtn = document.querySelector('.uncheckAll');
+	if (typeof(unCheckAllBtn) != 'undefined' && unCheckAllBtn != null){
+		unCheckAllBtn.addEventListener( "click", function() {
+			var checkboxes = document.getElementsByName("notif");
+			for(var i = 0; i < checkboxes.length; i++) {
+			    if(checkboxes[i].type == "checkbox") {
+			        checkboxes[i].checked = false; 
+			    }  
+			}
 		});
 	}
 
@@ -53,6 +130,33 @@ function toggleClass(element, className){
     }
     element.className = classString;
 }
+
+function removeClass(element,className) {
+  var currentClassName = element.getAttribute("class");
+  if (typeof currentClassName!== "undefined" && currentClassName) {
+
+    var class2RemoveIndex = currentClassName.indexOf(className);
+    if (class2RemoveIndex != -1) {
+        var class2Remove = currentClassName.substr(class2RemoveIndex, className.length);
+        var updatedClassName = currentClassName.replace(class2Remove,"").trim();
+        element.setAttribute("class",updatedClassName);
+    }
+  }
+  else {
+    element.removeAttribute("class");   
+  } 
+}
+
+function isChildOf(child, parent) {
+  if (child.parentNode === parent) {
+    return true;
+  } else if (child.parentNode === null) {
+    return false;
+  } else {
+    return isChildOf(child.parentNode, parent);
+  }
+}
+
 
 
 document.addEventListener("DOMContentLoaded", classList);

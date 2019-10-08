@@ -74,9 +74,9 @@
 									</div>
 									<div class="item">
 										<div class="cabinet-form__items">
-											<div class="enter__item">
+											<div class="enter__item enter__item--mobile-hight">
 												<div class="enter__label">Наименование организации<sup class="necessary">*</sup></div>
-												<input type="text" placeholder="Наименование">
+												<textarea placeholder="Наименование"></textarea>
 											</div>
 										
 											<div class="enter__item enter__item--double">
@@ -100,6 +100,7 @@
 												<div class="enter__half">
 													<div class="enter__label">Отчество<sup class="necessary">*</sup></div>
 													<input type="text" placeholder="Введите отчество">
+													<span class="enter__note">Ошибка</span>
 												</div>
 											</div>
 
@@ -118,20 +119,22 @@
 												<div class="enter__half">
 													<div class="enter__label">Телефон<sup class="necessary">*</sup></div>
 													<input type="text" placeholder="+375 __ _______">
+													<span class="enter__note">Ошибка</span>
 												</div>
 												<div class="enter__half">
 													<div class="enter__label">Сфера деятельности<sup class="necessary">*</sup></div>
 													<select name="v">
+														<option value="Другое">Другое</option>
 														<option value="Бухгалтер">Бухгалтер</option>
-														<option value="item2">item2</option>
-														<option value="item3">item3</option>
+														<option value="Грузчик">Грузчик</option>
 													</select>
+													<input type="text" placeholder="Сфера деятельности">
 												</div>
 											</div>
 
-											<div class="enter__item">
+											<div class="enter__item enter__item--mobile-hight">
 												<div class="enter__label">E-mail<sup class="necessary">*</sup></div>
-												<input type="text" placeholder="Введите e-mail">
+												<textarea placeholder="Введите e-mail"></textarea>
 											</div>
 										</div>
 										<div class="cabinet-conditions">

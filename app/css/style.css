@@ -1574,7 +1574,10 @@ textarea, input {
     background: url(../img/content/star.png) 12px 1px no-repeat; }
 
 .question-txt {
-  display: table; }
+  display: table;
+  color: #000; }
+  .question-txt:visited {
+    color: #4D4D4D; }
 
 .question-icon {
   padding-right: 8px;
@@ -1669,6 +1672,13 @@ textarea, input {
   display: block;
   margin-bottom: 15px;
   color: #F59E1F; }
+
+.notification-save-mobile {
+  text-align: right;
+  display: none; }
+  .notification-save-mobile input[type="submit"] {
+    display: inline-block;
+    width: auto; }
 
 @media screen and (max-height: 600px) {
   .enter__in {
@@ -2136,4 +2146,16 @@ textarea, input {
   .cabinet-add {
     display: block; }
   .cabinet-form__items {
-    max-width: 100%; } }
+    max-width: 100%; }
+  .control {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    padding-bottom: 0; }
+    .control .item--title input[type="submit"] {
+      display: none; }
+  .control__links {
+    margin-bottom: 20px; }
+  .notification-save-mobile {
+    display: block; } }

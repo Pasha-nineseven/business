@@ -539,7 +539,23 @@
   .cabinet-form__items{
     max-width: 100%;
   }
-
+  .control {
+    box-shadow: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    .item--title{
+      input[type="submit"]{
+        display: none;
+      }
+    }
+  }
+  .control__links{
+    margin-bottom: 20px;
+  }
+  .notification-save-mobile{
+    display: block;
+  }
 }
 
 

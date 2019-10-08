@@ -1725,6 +1725,10 @@ textarea, input {
     // background: url(../img/content/comment.png) 0px 0px no-repeat;
     // padding-left: 30px;
     display: table;
+    color: #000;
+    &:visited{
+      color: #4D4D4D;
+    }
 }
 
 .question-icon{
@@ -1840,6 +1844,14 @@ textarea, input {
     display: block;
     margin-bottom: 15px;
     color: #F59E1F;
+}
+.notification-save-mobile{
+  text-align: right;
+  display: none;
+  input[type="submit"]{
+    display: inline-block;
+    width: auto;
+  }
 }
 
 

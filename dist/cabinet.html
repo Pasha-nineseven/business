@@ -100,7 +100,7 @@
 												<div class="enter__half">
 													<div class="enter__label">Отчество<sup class="necessary">*</sup></div>
 													<input type="text" placeholder="Введите отчество">
-													<span class="enter__note">Ошибка</span>
+													<span class="enter__error">Ошибка</span>
 												</div>
 											</div>
 
@@ -119,16 +119,18 @@
 												<div class="enter__half">
 													<div class="enter__label">Телефон<sup class="necessary">*</sup></div>
 													<input type="text" placeholder="+375 __ _______">
-													<span class="enter__note">Ошибка</span>
+													<span class="enter__error">Ошибка</span>
 												</div>
 												<div class="enter__half">
 													<div class="enter__label">Сфера деятельности<sup class="necessary">*</sup></div>
-													<select name="v">
-														<option value="Другое">Другое</option>
+													<select name="v" id="js-select-sphere">
 														<option value="Бухгалтер">Бухгалтер</option>
 														<option value="Грузчик">Грузчик</option>
+														<option value="Другое">Другое</option>
 													</select>
-													<input type="text" placeholder="Сфера деятельности">
+													<div id="area-hidden">
+														<input type="text" placeholder="Сфера деятельности">
+													</div>
 												</div>
 											</div>
 

@@ -439,6 +439,7 @@ textarea, input {
         display: block;
         color: #000;
         resize:vertical;
+        // height: 55px;
     }
 }
   .workarea h1 {
@@ -1028,6 +1029,13 @@ textarea, input {
       +input[type="email"],
       +input[type="password"]{
         margin-top: 10px;
+      }
+      +#area-hidden{
+        input[type="text"],
+        input[type="email"],
+        input[type="password"]{
+          margin-top: 10px;
+        }
       }
     }
 }
@@ -1676,6 +1684,14 @@ textarea, input {
     left: 0;
 }
 
+.enter__error{
+  color: red;
+    font-size: 11px;
+    position: absolute;
+    bottom: -13px;
+    left: 0;
+}
+
 .cabinet-forms{
     .enter__item {
         margin-bottom: 15px;
@@ -1868,8 +1884,18 @@ textarea, input {
     width: auto;
   }
 }
+#area-hidden{
+  display: none;
+  // &.show{
+  //   display: block!important;
+  // }
+}
 
-
+.question-item{
+  textarea{
+    height: 55px;
+  }
+}
 
 // ETALON5
 

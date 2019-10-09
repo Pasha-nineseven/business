@@ -89,10 +89,9 @@ function classList() {
 	//   	}
 	// }
 
-	//CHECK ALL AND SCROLL
+	//CHECK ALL
 	var checkAllBtn = document.querySelector('.checkAll');
 	if (typeof(checkAllBtn) != 'undefined' && checkAllBtn != null){
-
 		checkAllBtn.addEventListener( "click", function() {
 			var checkboxes = document.getElementsByName("notif");
 			for(var i = 0; i < checkboxes.length; i++) {
@@ -100,9 +99,23 @@ function classList() {
 			        checkboxes[i].checked = true; 
 			    }  
 			}
+
+			var checkboxes_control = document.getElementsByName("block_control");
+			for(var i = 0; i < checkboxes_control.length; i++) {
+			    if(checkboxes_control[i].type == "checkbox") {
+			        checkboxes_control[i].checked = true; 
+			    }  
+			}
+
+			var remind = document.getElementsByName("block_remind");
+			for(var i = 0; i < remind.length; i++) {
+			    if(remind[i].type == "checkbox") {
+			        remind[i].checked = true; 
+			    }  
+			}
 		});
 	}
-	//UNCHECK ALL AND SCROLL
+	//UNCHECK ALL
 	var unCheckAllBtn = document.querySelector('.uncheckAll');
 	if (typeof(unCheckAllBtn) != 'undefined' && unCheckAllBtn != null){
 		unCheckAllBtn.addEventListener( "click", function() {
@@ -112,8 +125,40 @@ function classList() {
 			        checkboxes[i].checked = false; 
 			    }  
 			}
+
+			var checkboxes_control = document.getElementsByName("block_control");
+			for(var i = 0; i < checkboxes_control.length; i++) {
+			    if(checkboxes_control[i].type == "checkbox") {
+			        checkboxes_control[i].checked = false; 
+			    }  
+			}
+
+			var remind = document.getElementsByName("block_remind");
+			for(var i = 0; i < remind.length; i++) {
+			    if(remind[i].type == "checkbox") {
+			        remind[i].checked = false; 
+			    }  
+			}
 		});
 	}
+
+
+
+
+
+
+	//SHOW HIDDEN INPUT
+	var source = document.querySelector("#js-select-sphere");
+	var hiddenDiv = document.querySelector("#area-hidden");
+
+	source.addEventListener('change', function(){
+		 if (this.options[this.selectedIndex].value == "Другое") {
+			hiddenDiv.style.display='block';
+		} 
+		else{
+			hiddenDiv.style.display='none';
+		}
+	})
 
 }
 

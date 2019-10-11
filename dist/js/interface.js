@@ -1,4 +1,19 @@
+
 function classList() {
+	// var sidebar = document.querySelector('.sticky-sidebar');
+	// var content = document.querySelector('.document');
+	// var floatSidebar = FloatSidebar({
+	//     sidebar: sidebar,
+	//     relative: content
+	// });
+	//  Init Sticky
+	// var sticky = document.querySelector('.sticky-sidebar');
+	// if (sticky)
+	//   Sticky.init(sticky);
+	//var sticky = new Sticky('.page-aside');
+
+
+
 	var menuBtn = document.querySelector('.menu-btn');
 	var	menu    = document.querySelector('.menu-mobile');
 	var	menuBg  = document.querySelector('.menu-mobile__bg');
@@ -150,15 +165,16 @@ function classList() {
 	//SHOW HIDDEN INPUT
 	var source = document.querySelector("#js-select-sphere");
 	var hiddenDiv = document.querySelector("#area-hidden");
-
-	source.addEventListener('change', function(){
-		 if (this.options[this.selectedIndex].value == "Другое") {
-			hiddenDiv.style.display='block';
-		} 
-		else{
-			hiddenDiv.style.display='none';
-		}
-	})
+	if (typeof(source) != 'undefined' && source != null){
+		source.addEventListener('change', function(){
+			 if (this.options[this.selectedIndex].value == "Другое") {
+				hiddenDiv.style.display='block';
+			} 
+			else{
+				hiddenDiv.style.display='none';
+			}
+		})
+	}
 
 }
 

@@ -1075,6 +1075,14 @@ textarea, input {
     float: left;
 }
 
+.page-aside--document{
+  position: sticky;
+  top: 20px;
+  transform: translateZ(0);
+        -webkit-transform: translateZ(0);
+        backface-visibility: hidden
+}
+
 .page-gen{
     overflow: hidden;
     padding: 0 0 0 24px;

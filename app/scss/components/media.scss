@@ -1,3 +1,14 @@
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .page-aside--document{
+        position: fixed;
+        top: 88px;
+    }
+    .page-gen{
+        padding: 0 0 0 340px;
+    }
+}
+
+
 @media screen and (max-height: 600px){
   .enter__in {
       position: static;

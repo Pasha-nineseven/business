@@ -1043,6 +1043,15 @@ textarea, input {
   width: 311px;
   float: left; }
 
+.page-aside--document {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
+
 .page-gen {
   overflow: hidden;
   padding: 0 0 0 24px; }
@@ -1709,6 +1718,13 @@ textarea, input {
 
 .sticky-sidebar__inner {
   width: 311px !important; }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .page-aside--document {
+    position: fixed;
+    top: 88px; }
+  .page-gen {
+    padding: 0 0 0 340px; } }
 
 @media screen and (max-height: 600px) {
   .enter__in {

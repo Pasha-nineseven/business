@@ -1,16 +1,17 @@
 
 function classList() {
-	// var sidebar = document.querySelector('.sticky-sidebar');
-	// var content = document.querySelector('.document');
-	// var floatSidebar = FloatSidebar({
-	//     sidebar: sidebar,
-	//     relative: content
-	// });
-	//  Init Sticky
-	// var sticky = document.querySelector('.sticky-sidebar');
-	// if (sticky)
-	//   Sticky.init(sticky);
-	//var sticky = new Sticky('.page-aside');
+	
+
+	// SET FILTER-CONTENTS HEIGHT
+	var pageAsideDocument = document.querySelector('.page-aside--document');
+	if (typeof(pageAsideDocument) != 'undefined' && pageAsideDocument != null){
+		var heightWindow = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+		var filter = document.querySelector('.content-item--filter');
+		var filterContents = document.querySelector('.content-item--contents');
+		var filterHeight = filter.clientHeight;
+		var differents = heightWindow - filterHeight - 128 -131;
+		filterContents.style.height = differents+"px";
+	}
 
 
 
@@ -88,21 +89,6 @@ function classList() {
 			}
 		}, false);
 	}
-
-
-
-	//CHECK RESOLUTION
-	// var x = window.matchMedia("(max-width: 600px)");
-	// checkResolution(x);
-	// x.addListener(checkResolution);
-
-	// function checkResolution(x) {
-	//   	if (x.matches) { // If media query matches
-	//     	document.body.style.backgroundColor = "yellow";
-	//   	} else {
-	//     	document.body.style.backgroundColor = "pink";
-	//   	}
-	// }
 
 	//CHECK ALL
 	var checkAllBtn = document.querySelector('.checkAll');
@@ -220,7 +206,14 @@ function isChildOf(child, parent) {
 
 
 
-document.addEventListener("DOMContentLoaded", classList);
+
+
+if (document.addEventListener){
+    document.addEventListener("DOMContentLoaded", classList);
+} else if (document.attachEvent){
+    document .attachEvent("DOMContentLoaded", classList);
+}
+
 
 //PAGES-LIST (remove)
 var divStr = 	'<div style="position: fixed; z-index: 1005; bottom: 0; right: 0; background: #fff; border: solid 1px #828286; width: 160px;"> \
@@ -247,6 +240,7 @@ var divStr = 	'<div style="position: fixed; z-index: 1005; bottom: 0; right: 0; 
         				<li><a href="questions3.html">Задать вопрос</a></li> \
         				<li><a href="logged-in.html">Вход выполнен</a></li> \
         				<li><a href="comments.html">Комментарии</a></li> \
+        				<li><a href="2.html">2</a></li> \
 					</ol> \
 				</div>';
 document.getElementsByTagName('body')[0].innerHTML += divStr;

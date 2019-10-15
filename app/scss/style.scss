@@ -280,8 +280,10 @@ textarea, input {
 .page-header {
   background: #fff;
   margin-bottom: 26px;
-  position: relative;
-  z-index: 7; }
+  position: fixed;
+  z-index: 7;
+  width: 100%;
+  top: 0;}
 
 .page-header__wrap {
   overflow: hidden;
@@ -502,6 +504,7 @@ textarea, input {
     display: table-cell;
     height: 100%;
     padding-bottom: 30px;
+        padding-top: 88px;
     &:after{
         content: "";
         display: table;
@@ -547,6 +550,7 @@ textarea, input {
   width: 100%;
   height: 100%;
   border: 0;
+  background: #fff!important;
   padding: 0 180px 0 50px; }
 
 .page-search__icon {
@@ -877,6 +881,8 @@ textarea, input {
 .page-footer {
   background: #fff;
   padding: 23px 0;
+  position: relative;
+  z-index: 7;
   font-size: 12px; }
 
 .page-footer__wrap {
@@ -1076,11 +1082,12 @@ textarea, input {
 }
 
 .page-aside--document{
-  position: sticky;
-  top: 20px;
+  position: fixed;
+  top: 88px;
   transform: translateZ(0);
   -webkit-transform: translateZ(0);
-  backface-visibility: hidden
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .page-gen{
@@ -1112,7 +1119,7 @@ textarea, input {
 
 .document{
   background: #fff;
-  padding: 15px 7px 15px 80px;
+  padding: 15px 25px 15px 80px;
   position: relative;
 }
 
@@ -1908,6 +1915,23 @@ textarea, input {
 
 .sticky-sidebar__inner{
   width: 311px!important;
+}
+
+.layout--document{
+  .page-gen {
+    margin-left: 310px;
+  }
+}
+
+
+.layout--index{
+  .page-search__toggle {
+    right: 113px;
+  }
+}
+
+.content-item--contents{
+  overflow: scroll;
 }
 
 @import "components/media";

@@ -1,6 +1,11 @@
 .layout{
 	display: block;
 	min-height: 100%;
+	
+}
+
+.layout--document{
+	height: auto;
 }
 
 .check-wrap label{
@@ -33,17 +38,18 @@
 }
 
 .page-search__toggle{
-	right: 137px;
+	right: 155px!important;
 }
 
 
 .page-search__input{
-	height: 47px;
+	height: 45px!important;
 	padding: 0;
-	line-height: 47px;
+	line-height: 45px!important;
 	position: absolute;
 	left: 50px;
-	width: 80%;
+	width: 80%!important;
+	border:0!important;
 }
 
 .banner-txt,
@@ -135,4 +141,11 @@
 }
 .wrapper{
 	padding-bottom: 50px;
+}
+
+.page-aside--document{
+	left: 0;
+}
+.content-item--contents{
+	height: 300px;
 }
